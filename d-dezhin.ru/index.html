@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title>
+  <meta name="description" content="">
+
+  <meta property='og:title' content=''/>
+  <meta property='og:description' content=''/>
+  <meta property='og:image' content=''/>
+  <meta property='og:url' content=''/>
+  <meta property='og:site_name' content=''/>
+  <meta property='og:locale' content='ru_RU'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/there/styles/null.css">
+  <link rel="stylesheet" href="/there/styles/root.css">
+  <link rel="stylesheet" href="/there/styles/good.css">
+  <link rel="stylesheet" href="/there/styles/goods.css">
+  <link rel="stylesheet" href="/there/styles/good-group-a.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+
+  <header>
+    <div>
+      <div class="brand">
+        <img src="there/avatar.jpg">
+        <span>Дмитрий Дежин</span>
+      </div>
+      <nav>
+        <a href="https://www.instagram.com/d_dezhin/" class="target">Ссылка на Instagram</a>
+        <a href="tel:+79629234552">Позвонить</a>
+        <a href="mailto:ddezhin@gmail.com">Написать</a>
+      </nav>
+    </div>
+  </header>
+  <style>
+    #intro > div{
+      display: flex;
+    }
+    #intro > div > img{
+      width: unset;
+      aspect-ratio: 1/1;
+    }
+    #about,
+    #contact{
+      padding: 12px 24px;
+    }
+    #contact a,
+    #contact input,
+    #contact textarea{
+      background: #f0f0f0 !important;
+    }
+    #contact > .g{
+      margin: 18px 0 0 0 ;
+    }
+    #other,
+    #contact,
+    #about,
+    #service,
+    #review,
+    #fact,
+    #post{
+      background: #FFFFFF;
+      width: var(--width);
+      margin: 0 auto;
+    }
+    #other,
+    #about,
+    #service,
+    #review,
+    #fact{
+      margin: 18px auto;
+    }
+    #other > span,
+    #service > span,
+    #review > span,
+    #fact > span,
+    #other > h2,
+    #service > h2,
+    #review > h2,
+    #fact > h2{
+      padding: 12px 0 0 24px;
+    }
+    #post{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(var(--quint), 1fr));
+      gap: 0 4px;
+    }
+    #post .post:hover{
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+    #post .post > p{
+      display: none;
+    }
+    #service > .g{
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+    #service > .g > .service{
+      display: flex;
+      min-width: var(--width);
+      scroll-snap-align: start;
+    }
+    #service > .g > .service > img{
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+    }
+    #service > .g > .service > .g1{
+      padding: 12px 24px;
+    }
+    #service > .g > .service > .g1 > span{
+      opacity: 0.5;
+      margin: 0 0 12px 0;
+    }
+    #service > .g > .service > .g1 > .s{
+      height: max-content;
+      display: flex;
+      margin: 12px 0;
+    }
+    #service > .g > .service > .g1 > ul{
+      margin: 12px 0 0 0;
+    }
+
+    #review > .g{
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+    #review > .g > .review{
+      min-width: var(--width);
+      scroll-snap-align: start;
+    }
+    #review > .g > .review > img{
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+    }
+    #review > .g > .review > .g1{
+      padding: 12px 24px;
+    }
+    #review > .g > .review > .g1 > span{
+      opacity: 0.5;
+      margin: 0 0 12px 0;
+    }
+    #review > .g > .review > .g1 > .s{
+      height: max-content;
+      display: flex;
+      margin: 12px 0;
+    }
+    #review > .g > .review > .g1 > ul{
+      margin: 12px 0 0 0;
+    }
+
+    #fact > .g > ul{
+      list-style-type: decimal;
+    }
+    #fact > .g > ul > li{
+      background: var(--background);
+      padding: 12px;
+      margin: 0 24px 16px 24px;
+    }
+    @media (max-height: 100vw){
+      #fact > .g{
+        display: grid;
+        grid-template-columns: 1fr var(--quater);
+      }
+      #service > .g > .service,
+      #review > .g > .review{
+        display: flex;
+      }
+    }
+    @media (max-width: 100vh){
+      #intro > div{
+        display: block;
+      }
+      #service > .g > .service > img,
+      #review > .g > .review > img,
+      #intro > div > img{
+        width: 100%;
+        aspect-ratio: 16/9;
+      }
+      #fact > .g,
+      #service > .g > .service,
+      #review > .g > .review{
+        display: block;
+      }
+    }
+    #contact ul > li{
+      display: block;
+      height: max-content;
+      padding: 0 0 12px 0;
+    }
+    #contact ul > li > a{
+      display: block;
+      width: max-content;
+      border-radius: 21px;
+    }
+    #post + p{
+      width: max-content;
+      margin: 0 auto;
+    }
+  </style>
+  <main>
+    <div id="intro">
+      <div>
+        <img src="there/avatar.jpg" alt="" id="O6">
+        <div class="g1">
+          <span id="O1">Помогаю людям разобраться в себе</span>
+          <h1 id="O2">Дмитрий Дежин – психолог</h1>
+          <h2 id="O3">Занимаюсь психологией более 8 лет</h2>
+          <p id="O4">Дополнительная информация:</p>
+          <ul id="O5">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="transition"><img src=""><span class="dec">Добро пожаловать!</span></div>
+    <div id="post" class="s">
+    </div>
+    <p>Данный контент является примером и не несет в себе никакой информации</p>
+    <div id="about" class="grid">
+      <h2 class="dec">Подробнее</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate non exercitationem commodi numquam explicabo delectus earum quisquam repudiandae perspiciatis dolorum beatae vel. Odio repellendus architecto laudantium distinctio molestias tempore tempora necessitatibus harum, corporis aliquam labore optio libero quidem eum voluptates nisi ullam itaque commodi amet eos aut fuga laboriosam totam nemo? Molestias numquam, reprehenderit vero quia quasi harum inventore repellendus nisi repellat nihil necessitatibus sint possimus consequuntur error totam pariatur recusandae assumenda dolores animi earum ipsum laboriosam maxime. Aperiam labore earum perspiciatis sed consequuntur, quia natus tenetur iste soluta vel voluptatem explicabo commodi nulla eligendi in placeat dignissimos expedita aliquam praesentium exercitationem, error beatae dolores ipsa? Voluptatem totam possimus quas sint. Saepe deleniti sint reprehenderit dolorem necessitatibus, hic delectus quod ipsam sit quaerat, officiis officia a voluptas. Voluptates quae eligendi magni et dolor. Asperiores iste ea ratione alias optio exercitationem dolorum corporis ex fugit eos architecto, laudantium repellendus nisi! Dolore illum eaque ducimus tenetur doloremque architecto hic? Est praesentium natus necessitatibus odio, molestias delectus quasi eaque magnam officia tempora doloribus veniam iure exercitationem nemo expedita labore rerum qui? Soluta dolorum quam maiores aut numquam labore optio officiis sint! Officia fuga magnam quia quam suscipit rerum nulla possimus, amet nihil, impedit eius. Eius earum ipsa soluta libero perspiciatis nihil eligendi doloremque expedita quasi, iure nam itaque architecto aperiam quia. Quaerat veritatis consequuntur minus? Deleniti, maxime asperiores temporibus quos iste necessitatibus nemo quaerat repellat rerum perferendis nobis nisi veniam error quibusdam exercitationem iure consequatur eius eum ratione ea facere aliquam ipsa.</p>
+    </div>
+
+    <div id="service" class="s formal">
+      <h2 class="dec">Консультация</h2>
+      <span>Информация для взаимного сотрудничества</span>
+      <div class="g">
+        <div class="service">
+          <img src="there/avatar.jpg" alt="Фотография специалиста">
+          <div class="g1">
+            <h3>Комплексная консультация - 10000 ₽ - 40 минут</h3>
+            <span>Онлайн или удаленно</span>
+            <div class="s">
+              <a href="#contact" class="target">Заказать услугу</a>
+              <a href="#post">Узнать подробнее</a>
+            </div>
+            <p>Предлагаю Вам консультацию конторая затронет следующие аспекты Вашей жизни:</p>
+            <ul>
+              <li>Сатори Хилинг</li>
+              <li>Работа с самооценкой</li>
+              <li>Сложности в воспитании</li>
+              <li>Разводы и раставания</li>
+              <li>Проблемы во взаимоотношениях</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="s formal">
+      <h2 class="dec" id="O10">Мои контакты</h2>
+      <span id="O11">Информация о методах связи со мной</span>
+      <p id="O12">Работаю 24/7 онлайн, также провожу очные сессии:</p>
+      <ul id="O13">
+      </ul>
+      <div class="g">
+        <ul id="O14">
+          <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+          <li><a href="mailto:">mail@mail.com</a></li>
+          <li><a href="" class="address">address 1 2 3 4 </a></li>
+          <li><a href="" class="social">Whatsapp</a></li>
+          <li><a href="" class="social">Telegram</a></li>
+        </ul>
+        <form action="/there/actions/to/send.php" method="post" id="O15">
+          <label for="input01">Ваш телефон</label><input type="text" id="input01" placeholder="Ваш телефон">
+          <label for="input02">Ваша почта</label><input type="text" id="input02" placeholder="Ваша почта">
+          <label for="input03">Ваше сообщение</label><textarea name="" id="input03" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div id="other" class="s formal">
+      <h2 class="dec">Дополнительно</h2>
+      <span>Дополнительная информация о контексте</span>
+      <div class="s">
+        <a href="https://ru.rohhs.com" class="target-a">Техническая поддержка</a>
+        <a href="/rules" class="target-a">Правила сайта</a>
+        <a href="/other" class="target-a">Документы сайта</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <p>d-dezhin.ru 2024</p>
+      <span id="O16">Данный домен относится к личности</span>
+    </div>
+  </footer>
+  <!-- add script there/scripts/generator.js -->
+  <script src="/there/scripts/generator.js"></script>
+  <script src="/there/scripts/goods.js"></script>
+  <script>
+    var datum = {
+      header: {
+        brand : {
+          src: "there/avatar.jpg",
+          span: "Дмитрий Дежин"
+        },
+        nav: [
+          {
+            href: "",
+            text: "Ссылка на Instagram"
+          },
+          {
+            href: "",
+            text: "Позвонить"
+          },
+          {
+            href: "",
+            text: "Написать"
+          }
+        ]
+      },
+      intro: {
+        O1: "Помогаю людям разобраться в себе",
+        O2: "Дмитрий Дежин – психолог",
+        O3: "Занимаюсь психологией более 8 лет",
+        O4: "",
+        O5: [],
+        O6: {
+          src: "there/avatar.jpg",
+          alt: ""
+        },
+      },
+      transition: {
+        src: "",
+        text: "Добро пожаловать!"
+      },
+      post: [
+        {
+          img: {
+            src: "/there/placeholder/image.png",
+            alt: ""
+          },
+          text: "Сегодня проснулся рано."
+        },
+        {
+          img: {
+            src: "/there/placeholder/image.png",
+            alt: ""
+          },
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sed quisquam, repudiandae dolorem, esse omnis vitae porro magni hic ea maiores."
+        },
+        {
+          img: {
+            src: "/there/placeholder/image.png",
+            alt: ""
+          },
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sed quisquam, repudiandae dolorem, esse omnis vitae porro magni hic ea maiores."
+        },
+        {
+          img: {
+            src: "/there/placeholder/image.png",
+            alt: ""
+          },
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sed quisquam, repudiandae dolorem, esse omnis vitae porro magni hic ea maiores."
+        }
+      ],
+      about: {
+        h2: "Подробнее",
+        h2_span: "Рассказываю о том что сделал",
+        p: "Психология представляет собой многогранный мир изучения человеческого разума и поведения. В ее основе лежит стремление понять, почему мы ведем себя так, как ведем, и какие механизмы управляют нашими мыслями, чувствами и поступками. Эта наука охватывает широкий спектр тем, начиная от изучения структуры сознания и внимания, до анализа сложных социальных взаимодействий и развития личности на протяжении жизни. Психология изучает также вопросы психического здоровья, включая понимание причин и проявлений психических расстройств, а также разработку методов и стратегий помощи и лечения. Разнообразные теории и подходы в психологии предлагают различные ракурсы на понимание человеческого опыта. Например, поведенческая психология сосредотачивается на изучении наблюдаемых поведенческих реакций и механизмов их формирования через воздействие стимулов и награды. В то время как когнитивная психология изучает процессы восприятия, мышления и памяти, фокусируясь на том, как люди обрабатывают информацию и принимают решения. Психоаналитическая теория, основанная на работах Зигмунда Фрейда, исследует глубинные слои подсознательного, выявляя скрытые мотивы и конфликты. Гуманистическая психология, напротив, акцентирует внимание на внутреннем потенциале каждого человека и стремлении к самореализации и личностному росту. Социальная психология изучает влияние социальной среды на поведение и взаимодействие между людьми, раскрывая тайны межличностных отношений и групповой динамики. Развивающаяся психология исследует процессы развития человека на протяжении всей жизни, от детства до пожилого возраста, выявляя ключевые этапы и факторы, влияющие на формирование личности. Все эти направления психологии взаимосвязаны и взаимодополняют друг друга, создавая обширный и непрерывно развивающийся образовательный и исследовательский контекст. Психология - это не только наука, но и практическое руководство для понимания себя и окружающего мира, помогающее нам стать более осознанными, эмпатичными и счастливыми людьми.",
+        figures:[
+        ],
+      },
+      fact: {
+        h2: "Факты обо мне",
+        h2_span: "Рассказываю о том что сделал",
+        ul: ["Lorem Ipsum1", "Lorem Ipsum33", "Lorem Ipsum2", "Lorem Ipsum2"],
+        advertising: {
+          src: "/there/placeholder/image.png",
+          alt: ""
+        }
+      },
+      review: {
+        h2: "Отзывы обо мне",
+        h2_span: "Рассказывают обо мне",
+        reviews: [
+          {
+            img: {
+              src: "/there/placeholder/image.png",
+              alt: ""
+            },
+            g1: {
+              h3: "Имя Фамилия сказал: “Lorem Ipsum”",
+              span: {
+                date: "Дата",
+                place: "Место",
+                id: "№54777810",
+                link: "https://ru.rohhs.com"
+              },
+              p: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna.Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus."
+            }
+          },
+          {
+            img: {
+              src: "/there/placeholder/image.png",
+              alt: ""
+            },
+            g1: {
+              h3: "Имя Фамилия сказал: “Lorem Ipsum”",
+              span: {
+                date: "Дата",
+                place: "Место",
+                id: "№54777810",
+                link: "https://ru.rohhs.com"
+              },
+              p: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna.Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus."
+            }
+          }
+        ]
+      },
+      service: {
+        h2: "Консультация",
+        h2_span: "Информация для взаимного сотрудничества",
+        services: [
+        ]
+      },
+      contact: {
+        h2: "Мои контакты",
+        h2_span: "Информация о методах связи со мной",
+        p: "Работаю 24/7 онлайн, также провожу очные сессии:",
+        ul: [],
+        ul2: [
+          {
+            text: "+7 (962) 923-45-52",
+            href: "tel:+79629234552",
+            class: "tel"
+          },
+          {
+            text: "Ddezhin@gmail.com",
+            href: "mailto:ddezhin@gmail.com",
+            class: "mail"
+          },
+          {
+            text: "Whatsapp",
+            href: "https://wa.me/+79629234552",
+            class: "social"
+          }
+        ],
+        form: {
+          action: "there/send.php",
+          method: "post",
+          id: "O15",
+          inputs: [
+            {
+              label: "Ваш телефон",
+              type: "text",
+              id: "input01",
+              placeholder: "Ваш телефон"
+            },
+            {
+              label: "Ваша почта",
+              type: "text",
+              id: "input02",
+              placeholder: "Ваша почта"
+            },
+            {
+              label: "Ваше сообщение",
+              type: "textarea",
+              id: "input03",
+              cols: "30",
+              rows: "10",
+              placeholder: "Ваше сообщение"
+            }
+          ],
+          button: "Отправить"
+        }
+      },
+    };
+    // when dom is loaded run init
+    document.addEventListener('DOMContentLoaded', init);
+
+    // loadAndMoveContent function
+    // load with fetch and move to desired place
+
+    async function loadAndMoveContent(url, place){
+      let response = await fetch(url);
+      let text = await response.text();
+      place.innerHTML += text;
+    }
+
+    // add to the end of body '/there/patterns/fullscreen-image.html'
+    loadAndMoveContent('/there/patterns/fullscreen-image.html', document.body);
+  </script>
+  <!-- backlog -->
+      <!-- <div id="fact" class="s formal">
+      <h2 class="dec" id="O7">Факты обо мне</h2>
+      <span id="O8">Рассказываю о том что сделал</span>
+      <div class="g">
+        <ul id="O9">
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+          <li>Lorem Ipsum</li>
+        </ul>
+        <div class="advertising">
+          <img src="/there/placeholder/image.png" alt="">
+        </div>
+      </div>
+    </div> -->
+    <!-- <div id="review" class="s formal">
+      <h2 class="dec">Отзывы обо мне</h2>
+      <span>Рассказывают обо мне</span>
+      <div class="g">
+        <div class="review">
+          <img src="/there/placeholder/image.png" alt="">
+          <div class="g1">
+            <h3>Имя Фамилия сказал: “Lorem Ipsum”</h3>
+            <span>Дата / Место (№, ссылка на аккаунт если имеются)</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna.Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
+          </div>
+        </div>
+        <div class="review">
+          <img src="/there/placeholder/image.png" alt="">
+          <div class="g1">
+            <h3>Имя Фамилия сказал: “Lorem Ipsum”</h3>
+            <span>Дата / Место (№, ссылка на аккаунт если имеются)</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna.Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
+          </div>
+        </div>
+        <div class="review">
+          <img src="/there/placeholder/image.png" alt="">
+          <div class="g1">
+            <h3>Имя Фамилия сказал: “Lorem Ipsum”</h3>
+            <span>Дата / Место (№, ссылка на аккаунт если имеются)</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna.Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+</body>
+</html>

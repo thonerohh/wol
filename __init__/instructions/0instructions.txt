@@ -1,0 +1,26 @@
+Main documents to generate data from:
+
+Most part of customers do give data about prices and contacts, they give data of prices in format: 
+name of service + price
+
+There are should be different ways to upload it to geenrator. Prices n contatcs are arrays.
+
+Python have build in input and there are should be like:
+
+1. input data about service in format name:content:action with (csv), insert nothing if it is the last one
+2. input contacts of customer in format title:action, insert nothing if it is the last one
+
+1: wil create array or object within "services" array:
+["name", [images], [actions]]
+{
+  "name": "title",
+  "image": "link",
+  "action": "link" default #contact 
+}
+
+2: will create array or object within "contacts" object:
+[title, action]
+{
+  "title": name,
+  "action": link
+}

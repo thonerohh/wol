@@ -1,0 +1,127 @@
+header{
+  background: #ffffff;
+}
+header > div{
+  justify-content: space-between;
+  align-items: center;
+}
+header .brand{
+  display: flex;
+}
+header .brand > img{
+  height:44px;
+  width:44px;
+  object-fit: cover;
+  margin-right: 8px;
+  border-radius: 21px;
+}
+header .brand > span{
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+header div > .g > a{
+  display: block;
+  text-align: right;
+}
+@media (max-width: 100vh){
+  header div > .g > a{
+    text-align: center;
+  }
+}
+
+#other > .s{
+  margin: 24px 0;
+  padding: 0;
+}
+
+main a{
+  font-size: 19px;
+  padding: 6px 18px 8px 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+main a.target{
+  border-radius: 19px;
+  background: #000000;
+  color: #ffffff;
+}
+main a.target-a{
+  border-radius: 19px;
+  background: var(--background);
+  font-weight: 600;
+}
+main a.target-b{
+  border-radius: 19px;
+  background: #ffffff;
+  font-weight: 600;
+}
+
+/* test */
+#contact{
+  width: var(--width);
+  margin: 24px auto;
+}
+#contact > .g{
+  margin: 24px 0;
+  display: grid;
+  grid-template-columns: calc(var(--sext) + var(--half)) 1fr;
+}
+#contact > .g > div > a{
+  display: block;
+  height: 44px;
+  border-radius: 21px;
+  margin: 0 0 12px 0;
+  width: max-content;
+  background: #ffffff;
+}
+#contact > .g > form{
+  display: flex;
+  flex-direction: column;
+}
+#contact > .g > form > label{
+  margin: 12px 0 0 0;
+}
+#contact > .g > form > input{
+  height: 34px;
+  padding: 0 12px;
+}
+#contact > .g > form > input,
+#contact > .g > form > textarea{
+  background: #ffffff;
+  border-radius: 16px;
+  margin: 8px 0 0 0;
+}
+#contact > .g > form > textarea{
+  padding: 8px 12px;
+  min-height: 100px;
+  height: 150px;
+  max-height: 250px;
+  resize: vertical;
+
+}
+#contact > .g > form > button{
+  align-self: flex-end;
+  max-width: max-content;
+  padding: 12px 18px;
+}
+#contact > iframe{
+  height: 400px;
+  width: 100%;
+  border-radius: 33px;
+  background: #000000;
+}
+
+@media (max-width:100vh){
+  #about{
+    grid-template-columns: 1fr;
+    gap: 24px 0;
+    padding: 0 24px;
+  }
+  #contact{
+    padding: 0 24px;
+  }
+  #contact > .g{
+    display: block;
+  }
+}

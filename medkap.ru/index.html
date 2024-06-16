@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="material-ul-lis-author" content="OpenAI ChatGPT">
+
+  <title>Частная Скорая Помощь - МедКап</title>
+  <meta name="description" content="Сделаем всё, что нужно. Медицинские Капельницы, всеобщая очистка организма. Звоните 8 (495) 142-41-13, работаем в МСК и регионах">
+
+  <meta property='og:title' content='Частная Скорая Помощь - МедКап'/>
+  <meta property='og:description' content='Сделаем всё, что нужно. Медицинские Капельницы, всеобщая очистка организма. Звоните 8 (495) 142-41-13, работаем в МСК и регионах'/>
+  <meta property='og:image' content=''/>
+  <meta property='og:url' content=''/>
+  <meta property='og:site_name' content=''/>
+  <meta property='og:locale' content='ru_RU'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <!-- add noto sans font custom editing -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- add copyrights of openai chatgpt -->
+
+  <link rel="stylesheet" href="/there/styles/null.css">
+  <link rel="stylesheet" href="/there/styles/root.css">
+  <link rel="stylesheet" href="/there/styles/good.css">
+  <link rel="stylesheet" href="/there/styles/goods.css">
+  <link rel="stylesheet" href="/there/styles/good-group-b.css">
+  <link rel="stylesheet" href="/there/styles/medkap.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut' href='/favicon.ico' type='image/x-icon'>
+</head>
+<!-- ldjson -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "МедКап",
+    "legalName": "Организация МедКап",
+    "url": "https://medkap.ru",
+    "logo": "https://medkap.ru/there/logo.svg",
+    "description": "Частная скорая помощь. Медицинские капельницы, общая очистка организма. Консультация и первая помощь.",
+    "category": "Healthcare",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Moscow",
+      "addressCountry": "Russia",
+      "streetAddress": "Москва, улица Лётчика Бабушкина, 36"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "84951424113",
+        "contactType": "customer service"
+      }
+    ],
+    "sameAs": [
+      "https://rohhs.com/",
+      "https://rohh.ru/",
+      "https://ru.wikipedia.org/wiki/Скорая_медицинская_помощь"
+    ]
+  }
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0JPF3Z06K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0JPF3Z06K');
+</script>
+<!-- Yandex.Metrika counter -->
+<noscript><div><img src="https://mc.yandex.ru/watch/96833367" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(96833367, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<!-- Yandex.RTB -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9JWZG3LR3J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9JWZG3LR3J');
+</script>
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+<style>
+  :root{
+    --accent: red;
+    --brand: #05B8C1;
+  }
+</style>
+<body>
+  <header>
+    <div>
+      <div class="brand">
+        <img src="there/logotype2.svg" alt="Логотип частной скорой помощи, MedKap">
+        <div class="g">
+          <span>МедКап</span>
+          <span>Частная скорая помощь</span>
+        </div>
+      </div>
+      <div class="g">
+        <a href="tel:84951424113">8 (495) 142-41-13</a>
+      </div>
+    </div>
+    <nav>
+      <a href="#TA1">Оставить заявку</a>
+      <a href="#service">Виды капельниц</a>
+      <a href="#about">Подробнее</a>
+      <a href="#other">Прочее</a>
+    </nav>
+  </header>
+  <script>
+  window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    if (window.pageYOffset > 400) {
+      header.classList.add('active');
+    } else {
+      header.classList.remove('active');
+    }
+  });
+  </script>
+  <main>
+    <div id="intro">
+      <img src="there/iv-therapy.jpg" alt="">
+      <nav>
+        <a href="tel:84951424113" class="target main mobile" style="background: #e21616 !important;">Вызвать врача</a>
+        <a href="#contact" class="target main desktop" style="background: #e21616 !important;">Вызвать скорую</a>
+        <a href="#contact">Бесплатная консультация</a>
+        <a href="#material">Заказать услуги</a>
+      </nav>
+      <div class="g">
+        <div class="g">
+          <p>МедКап</p>
+          <h1>Частная медицинская помощь</h1>
+          <h2>Гарантированная анонимность</h2>
+          <p>Работаем 24/7. Специализируемся на помощи:</p>
+          <ul>
+            <li>Алкогольная зависимость <span style="color:red">Акция!</span></li>
+            <li>Наркотическая зависимость</li>
+            <li>Психологическая помощь</li>
+            <li>Помощь на дому</li>
+            <li>Стационарное лечение</li>
+            <li>Психологическая помощь</li>
+            <li>Реабилитационный центр</li>
+          </ul>
+        </div>
+        <!-- Yandex.RTB R-A-6950388-1 -->
+        <div id="yandex_rtb_R-A-6950388-1"></div>
+        <script>
+        window.yaContextCb.push(()=>{
+          Ya.Context.AdvManager.render({
+            "blockId": "R-A-6950388-1",
+            "renderTo": "yandex_rtb_R-A-6950388-1"
+          })
+        })
+        </script>
+      </div>
+    </div>
+    <div id="transition" class="animated">
+      <p>Вывод из запоя + кодирование на 24 мес 7500 рублей</p>
+      <p>Вывод из запоя + кодирование на 24 мес 7500 рублей</p>
+      <p>Вывод из запоя + кодирование на 24 мес 7500 рублей</p>
+    </div>
+    <div id="service" class="s">
+      <h2 class="dec">Какие услуги бывают</h2>
+      <span>Рассказываем о том какие услуги мы предоставляем</span>
+      <div class="g">
+        <div class="service">
+          <span style="background: red; color: white;">Экстренно</span>
+          <img src="there/medium-shot-smiley-woman-checking-patient1660138203.jpg" alt="Фотография услуги">
+          <h3 class="dec">Лечение на дому</h3>
+          <p>Выезд на дом необходим, когда сам пациент не в состоянии добраться до стационара.
+            Когда помощь нужна здесь и сейчас.
+            Для пациента лечение в привычных условиях гораздо комфортнее, чем за обособленными стенами больницы.
+            После чрезмерного употребления алкоголя, при плохом самочувствии на утро после праздника, разумно вызвать врача на дом, что бы быстро восстановиться.
+            Существует категория людей, которые ни при каких условиях не поедут в стационар</p>
+          <div class="s"><a href="#contact" class="target">Связаться</a></div>
+        </div>
+        <div class="service">
+          <span style="background: greenyellow; color: black;">Под наблюдением врача</span>
+          <img src="there/female-student-medicine-wearing-medical-mask.jpg" alt="Фотография услуги">
+          <h3 class="dec">Лечение в стационаре</h3>
+          <p>Врач и медсестра находятся круглосуточно у кровати больного, лечение, капельницы проводятся интенсивнее, чем на дому за 2 часа присутствия врача.
+            Работает много профессионалов: психотерапевты-наркологи, токсикологи, психологи, медсестры.
+            Стандарт оказания наркологической помощи предполагает лечение острых состояний, таких как длительный запой или острое алкогольное отравление.</p>
+          <div class="s"><a href="#contact" class="target">Связаться</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="advantage">
+      <h2 class="dec">Преимущества</h2>
+      <span>Лучшие стороны</span>
+      <div class="g">
+        <div class="g1">
+          <ul>
+            <li><img src="there/icons/delivery.svg" alt="Icon of the blood IV">
+              <p>Срочный выезд на дом,<br> в течение 1 часа после заявки</p>
+            </li>
+            <li><img src="there/icons/help1.svg" alt="Icon of the blood IV">
+              <p>Все виды лекарств</p>
+            </li>
+            <li><img src="there/icons/communication1.svg" alt="Icon of consultation">
+              <p>Выезд по Москве и МО</p>
+            </li>
+            <li><img src="there/icons/date.svg" alt="Icon of protection">
+              <p>Ежедневно, без выходных Работаем 24/7</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="price" class="s">
+      <h2 class="dec">Расценки</h2>
+      <span>Описание цен на те или иные услуги</span>
+      <div class="g21">
+        <table>
+          <thead>
+            <tr>
+              <th>Услуга</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Терапия. Стандарт</td>
+              <td>2 400 руб.</td>
+            </tr>
+            <tr>
+              <td>Терапия. Двойной Стандарт</td>
+              <td>6 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Терапия. "Усиленная"</td>
+              <td>11 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Терапия. Максимальное очищение</td>
+              <td>15 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Терапия. Максимальное очищение плюс</td>
+              <td>19 500 руб.</td>
+            </tr>
+            <tr>
+              <td>Вывод из запоя + кодирование на 12 месяцев</td>
+              <td>7 500 руб.</td>
+            </tr>
+            <tr>
+              <td>Вывод из запоя + кодирование на 24 месяца</td>
+              <td>9 500 руб.</td>
+            </tr>
+            <tr>
+              <td>Терапия VIP</td>
+              <td>27 500 руб.</td>
+            </tr>
+            <tr>
+              <td>Терапия. PREMIUM</td>
+              <td>35 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Домашний стационар</td>
+              <td>50 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Выезд врача нарколога и консультация на дому</td>
+              <td>3 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Консультация психотерапевта, психолога в клинике</td>
+              <td>3 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Первичный прием, осмотр врача, кубитальный катетер, ЭКГ</td>
+              <td>2 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Семейная консультация с психологом</td>
+              <td>5 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Консультация психиатра</td>
+              <td>3 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Выезд врача нарколога и консультация на дому</td>
+              <td>2 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Ремаксол</td>
+              <td>3 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Реамберин</td>
+              <td>3 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Цитофлавин №1 амп.</td>
+              <td>3 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Мафусол</td>
+              <td>2 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Нейрокс / Церепро/ Нейрокард</td>
+              <td>2 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Трисоль </td>
+              <td>2 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Ацесоль </td>
+              <td>2 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Стерофундин </td>
+              <td>2 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Стандартная терапия алкогольных отравлений </td>
+              <td>2 400 руб.</td>
+            </tr>
+            <tr>
+              <td>Усиленная терапия алкогольных отравлений </td>
+              <td>11 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Максимальное очищение</td>
+              <td>15 000 руб.</td>
+            </tr>
+            <tr>
+              <td>PREMIUM терапия </td>
+              <td>32 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Устранение похмельного синдрома</td>
+              <td>4 400 руб.</td>
+            </tr>
+            <tr>
+              <td>Экстренное быстрое вытрезвление</td>
+              <td>5 500 руб.</td>
+            </tr>
+            <tr>
+              <td>Вывод из запоя с формированием отвращения к алкоголю</td>
+              <td>7 700 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="g234">
+          <table>
+            <thead>
+              <tr>
+                <th>Услуга</th>
+                <th>Описание</th>
+                <th>Цена</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Капельница “Против аллергии”</td>
+                <td>6 000 р.</td>
+                <td>Избавляет от аллергии и проблем с реакцией на цветение, животных, еду. Идеальна для быстрого лечения…</td>
+              </tr>
+              <tr>
+                <td>Капельницы при железодефиците</td>
+                <td>6 500 р.</td>
+                <td>Идеально для профилактики и лечения анемии. Согласно статистике, каждый пятый человек страдает от недостатка железа…</td>
+              </tr>
+              <tr>
+                <td>Капельница “Восполнение белка”</td>
+                <td>6 000 р.</td>
+                <td>Помогает восполнить дефицит белка в организме и борется со слабостью и усталостью, сухостью кожи, возвращает…</td>
+              </tr>
+              <tr>
+                <td>Капельница “Против утомления”</td>
+                <td>5 000 р.</td>
+                <td>Помогает быстро снять усталость, взбодриться и вернуть хорошее самочувствие, улучшает работоспособность.</td>
+              </tr>
+              <tr>
+                <td>Капельница “Укрепление здоровья и иммунитета”</td>
+                <td>6 000 р.</td>
+                <td>Усиление иммунитета, профилактика и восстановление здоровья и сил после болезни.</td>
+              </tr>
+              <tr>
+                <td>Капельница “Выносливость к нагрузкам”</td>
+                <td>7 000 р.</td>
+                <td>Быстрое восстановление после тренировок, повышение силы и выносливости организма для занятий спортом и не только.</td>
+              </tr>
+              <tr>
+                <td>Капельница “Против стресса”</td>
+                <td>5 000 р.</td>
+                <td>Для избавления от хронической усталости, апатии и плохого настроения. Поможет вернуть силы и радость жизни!</td>
+              </tr>
+              <tr>
+                <td>Капельница “Против Герпеса”</td>
+                <td>5 500 р.</td>
+                <td>Быстрое и эффективное избавляет от зуда, болей и покраснений при герпесе, укрепляет иммунитет.</td>
+              </tr>
+              <tr>
+                <td>Капельница “Против простуды”</td>
+                <td>6 000 р.</td>
+                <td>Быстрое и эффективное восстановление здоровья и сил после болезни.</td>
+              </tr>
+              <tr>
+                <td>Капельница “Стоп Мигрень”</td>
+                <td>6 000 р.</td>
+                <td>Быстрое избавление от головной боли, уменьшение чувствительности к погоде и улучшение самочувствия.</td>
+              </tr>
+              <tr>
+                <td>Капельница “Энерджайзер”</td>
+                <td>5 000 р.</td>
+                <td>Быстро восполняет энергию в организме и повышают работоспособность, концентрацию внимания и качество сна.</td>
+              </tr>
+              <tr>
+                <td>Капельница “Активность мозга”</td>
+                <td>5 000 р.</td>
+                <td>Улучшает память и повышает концентрацию, внимание, восстанавливает после Ковид.</td>
+              </tr>
+              <tr>
+                <td>Капельница “Глутатион”</td>
+                <td>5 000 р.</td>
+                <td>Восполняет недостаток глутатиона, замедляет процессы старения организма.</td>
+              </tr>
+              <tr>
+                <td>Капельница “Лаеннек”</td>
+                <td>8 900 р.</td>
+                <td>Капельница “Лаеннек” оказывает anti-age эффект, нормализует обмен веществ, ускоряет процессы регенерации клеток, повышает общий иммунитет.</td>
+              </tr>
+              <tr>
+                <td>Капельница “Против отёков”</td>
+                <td>8 000 р.</td>
+                <td>Капельница от отеков избавляет от лишней жидкости на лице и теле, предотвращает появление новых.</td>
+              </tr>
+              <tr>
+                <td>Жиросжигающие капельницы для похудения “Снижение веса”</td>
+                <td>5 000 р.</td>
+                <td>Эффективно помогает сжигать жир и худеть без потери мышечной массы и жидкости!</td>
+              </tr>
+              <tr>
+                <td>Капельница “Ускорение метаболизма”</td>
+                <td>7 000 р.</td>
+                <td>Капельница помогает организму ускорить обмен веществ (метаболизм), очистить организм от металлов и нормализовать работу печени!</td>
+              </tr>
+              <tr>
+                <td>Бьюти капельница “Уход за кожей”</td>
+                <td>7 000 р.</td>
+                <td>Капельница красоты и молодости увлажняет и питает кожу, защищает ее от преждевременного старения.</td>
+              </tr>
+              <tr>
+                <td>Бьюти капельница “Уход за волосами”</td>
+                <td>7 000 р.</td>
+                <td>Капельница работает с вашими волосами "изнутри", поэтому помогает вернуть их здоровье и красоту. Лечебные компоненты…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <button onclick="expandBlock('#price>.g21', this)">Посмотреть все</button>
+    <div id="about">
+      <h2 class="dec">Подробнее о нас</h2>
+      <span>Рассказываем о нас детальнее</span>
+      <div class="g">
+        <div class="g1">
+          <p>МедКап — специализируется на комплексном лечении алкогольной, наркотической, пищевой, табачной и других зависимостей, терапии психических и невротических расстройств, психосоматических болезней. Направление психиатрии является очень важным, так как любая зависимость обычно развивается на фоне ряда психологических проблем и внутренних конфликтов. В ходе лечения врачи психиатры-наркологи, психотерапевты, психологи помогают избавиться от физической и психологической тяги к наркотическим и другим веществам.</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function expandBlock(selector,element){
+        document.querySelector(selector).style.maxHeight = 'unset';
+        element.style.display = 'none';
+      }
+    </script>
+    <div id="TA2">
+      <h2 class="dec">Оставьте нам заявку</h2>
+      <div class="g">
+        <form action="there/script/send.php" method="post" enctype="multipart/form-data">
+          <label for="input001">Ваш телефон</label>
+          <input type="text" id="input001" placeholder="Введите свой телефон" name="phone" required>
+          <button>Отправить</button>
+          <p>* Оставляя свой номер телефона, Вы подтверждаете согласие на звонок нашего оператора.</p>
+        </form>
+        <img src="there/banner/desktop.png" alt="" class="desktop">
+        <img src="there/banner/mobile.png" alt="" class="mobile">
+      </div>
+    </div>
+    <div id="contact" class="s formal">
+      <h2 class="dec">Наши контакты</h2>
+      <span>Информация о методах связи со мной</span>
+      <p>Работаем 24/7, стационары расположены:</p>
+      <ul>
+        <li>Люберцы, Октябрьский проспект, 403, корп 3</li>
+        <li>Воскресенск, микрорайон центральный, улица Победы, 6</li>
+        <li>Одинцово, Молодёжная улица, 42</li>
+        <li>Москва, Талдомская улица, 11, корп. 1</li>
+        <li>Дедовск, улица победы, 2Б</li>
+        <li>Домодедово, Советская улица, 11</li>
+        <li>Москва, Краснодарская улица, 8</li>
+        <li>Зеленоград, проспект Генерала Алексеева, 2</li>
+        <li>Москва, Зеленодольская улица, 24</li>
+        <li>Москва, Изюминская улица, 26, корп 2</li>
+        <li>Москва, улица Лётчика Бабушкина, 36</li>
+        <li>Щёлково, Пролетарский проспект, 2</li>
+        <li>Пушкино, улица Чехова, 1, корп. 2</li>
+      </ul>
+      <div class="g">
+        <div>
+          <a href="tel:84951424113">8 (495) 142-41-13</a>
+          <a href="mailto:med.kap24@yandex.ru">med.kap24@yandex.ru</a>
+          <a href="wa.me/+74951424113" class="social">Whatsapp</a>
+        </div>
+        <form action="there/script/send.php" method="post" enctype="multipart/form-data">
+          <label for="input01">Ваш телефон</label><input type="text" id="input01" placeholder="Ваш телефон" name="phone" required>
+          <label for="input02">Ваша почта</label><input type="text" id="input02" placeholder="Ваша почта" name="email">
+          <label for="input03">Ваше сообщение</label><textarea id="input03" cols="30" rows="10" placeholder="Ваше сообщение" name="text"></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div id="material" class="s">
+      <h2 class="dec">Материалы для изучения</h2>
+      <span>Рассказываем о том где почитать о том где узнать как это устроено</span>
+      <div class="g">
+        <div class="side">
+          <ul>
+            <li><a href="https://new-disser.ru/_avtoreferats/01004061365.pdf">Социально гигиенические аспекты ...</a></li>
+            <li><a href="https://nauchkor.ru/uploads/documents/587d362e5f1be77c40d588be.pdf">Особенности временной перспективы ...</a></li>
+            <li><a href="https://disser.spbu.ru/files/disser2/1038/aftoreferat/gLG5tx7sGB.pdf">Социальные предпосылки проблем...</a></li>
+            <li><a href="http://intjournal.ru/wp-content/uploads/2021/08/Fedotov-3.pdf">Алкоголизм и наркомания.</a></li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <img src="there/icons/cure.svg" alt="Профилактика зависимостей">
+            <h3>Профилактика зависимостей: здоровый образ жизни</h3>
+            <p>Зависимость от психоактивных веществ всегда пагубно влияет на здоровье человека и зачастую приводит к серьёзным последствиям. Только поддерживая своё, как физическое здоровье, так и эмоциональное состояние, возможно жить чистым и трезвым.
+              Следуйте здоровому образу жизни: ведите активный образ жизни, занимайтесь спортом и здоровым питанием.
+              
+              Наша организация расширено очищает организм при интоксикации, опьянение, абстиненции под контролем профессиональных и высоко квалифицированных врачей и предоставляет не только медицинскую помощь, но и помощь психолога, аддиктолога.
+              <a href="#TA1">Заказать очистку</a></p>
+          </li>
+          <li>
+            <img src="there/icons/care.svg" alt="Поддержка социальных связей">
+            <h3>Социальная поддержка: ключ к предотвращению зависимостей</h3>
+            <p>Эмоциональная и психологическая поддержка наших пациентов - это ключ к чистой, трезвой и счастливой жизни.
+              Укрепляйте свои социальные связи, обращайтесь с друзьями и близкими, наши психологи и аддиктологи всегда помогут вам справиться с эмоционально значимыми ситуациями в жизни, что бы не допустить разрушительных последствий пагубной зависимости.</p>
+          </li>
+          <li>
+            <img src="there/icons/pleasure.svg" alt="Поиск альтернативных удовольствий">
+            <h3>Альтернативные удовольствия: как избежать зависимостей</h3>
+            <p>Находите замену вредным привычкам: занимайтесь хобби, участвуйте в интересных мероприятиях и развивайте новые навыки, поддерживайте своё эмоционально и физическое состояние. Мы всегда поможем вам в этом. <a href="#TA2">Помощь чата</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="other" class="s">
+      <h2 class="dec">Дополнительно</h2>
+      <span>Дополнительная информация о контексте</span>
+      <div class="s">
+        <a href="https://rohhs.com/" class="target-b">Техническая поддержка</a>
+        <a href="/rules" class="target-b">Правила сайта</a>
+        <a href="info.json" class="target-b">Документы сайта</a>
+      </div>
+    </div>
+  </main>
+  <div id="tool">
+    <div class="mobile">
+      <a href="tel:84951424113"><img src="https://rohh.ru/i/4/phone.svg" alt="Icon of the phone"></a>
+    </div>
+  </div>
+  <script src="/there/scripts/generator.js"></script>
+  <script src="/there/scripts/goods.js"></script>
+  <script src="/there/scripts/0/footer.js"></script>
+  <script>
+    async function init(){
+      // add to the end of body '/there/patterns/fullscreen-image.html'
+      await loadAndMoveContent('/there/patterns/0/footer.html', document.body);
+      await loadAndMoveContent('/there/patterns/fullscreen-image.html', document.body);
+      
+      // footer
+      await updateFooter('medkap.ru', 0);
+      await updateFooter('Сайт частной скорой помощи', 4);
+    }
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
+<div class="product">
+  <img src="" alt="">
+  <h2></h2>
+  <a href=""></a>
+</div>

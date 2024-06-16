@@ -1,0 +1,7 @@
+The HTML structure can commonly use:
+
+#TA as target action
+#TB as toolbar abbreviature
+
+.g[n] as a group
+.i as inline

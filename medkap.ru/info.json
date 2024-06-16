@@ -1,0 +1,48 @@
+{
+    "info":{
+        "owner":"Никита",
+        "date": "03/31/2024",
+        "creator":"Рохх"
+    },
+    "company":{
+        "name": "МедКап",
+        "address": "Москва, улица Лётчика Бабушкина, 36",
+        "phone": "84951424113",
+        "email": "med.kap24@yandex.ru"
+    },
+    "domain": "medkap.ru",
+    "ip_address": "217.160.157.105",
+    "whois_info": {
+        "domain_name": "MEDKAP.RU",
+        "registrar": "REGRU-RU",
+        "creation_date": "2024-03-07 09:32:28",
+        "expiration_date": "2025-03-07 09:32:28",
+        "name_servers": [
+            "ns1.reg.ru.",
+            "ns2.reg.ru."
+        ],
+        "status": "REGISTERED, DELEGATED, UNVERIFIED",
+        "emails": null,
+        "org": null
+    },
+    "server": {
+        "platform": "Linux",
+        "platform_release": "5.15.0-72-generic",
+        "platform_version": "#79-Ubuntu SMP Wed Apr 19 08:22:18 UTC 2023",
+        "architecture": "x86_64",
+        "hostname": "plesk.rohhs.com",
+        "ip_address": "127.0.0.1",
+        "memory": {
+            "total": 25174069248,
+            "available": 23749939200,
+            "used": 907448320,
+            "percentage": 5.7
+        },
+        "disk": {
+            "total": 665811062784,
+            "used": 7850921984,
+            "free": 657943363584,
+            "percentage": 1.2
+        }
+    }
+}

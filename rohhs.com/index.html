@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rohh Thone</title>
+  <meta name="description" content="There are personal page.">
+
+  <meta property='og:title' content=''/>
+  <meta property='og:description' content=''/>
+  <meta property='og:image' content=''/>
+  <meta property='og:url' content=''/>
+  <meta property='og:site_name' content=''/>
+  <meta property='og:locale' content='gb_en'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/there/styles/null.css">
+  <link rel="stylesheet" href="/there/styles/root.css">
+  <link rel="stylesheet" href="/there/styles/good.css">
+  <link rel="stylesheet" href="/there/styles/better.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+  <style>
+    
+    header {
+      animation: shadow 5s ease-in-out infinite;
+    }
+    @keyframes shadow {
+      0% {
+        box-shadow: 0 2px 2px 0 #00000022;
+      }
+      75% {
+        box-shadow: 0 0 8px 0 #00000088;
+      }
+      100% {
+        box-shadow: 0 2px 2px 0 #00000022;
+      }  
+    }
+    header > div > .brand{
+      display: flex;
+      align-items: center;
+      gap: 2px; 
+    }
+    header > div > .brand > p{
+      font-size: 24px;
+      font-weight: 700;
+      padding: 0 12px 0 0;
+      letter-spacing: -1px;
+    }
+    header > div > .brand > img{
+      height: 44px;
+      width: 44px;
+    }
+    header > div > nav::-webkit-scrollbar{
+      height: 4px;
+    }
+    header > div > nav::-webkit-scrollbar-track{
+      background: #f0f0f0;
+    }
+    header > div > nav::-webkit-scrollbar-thumb{
+      background: #888888;
+      border-radius: 2px;
+    }
+    header > div > nav{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      height: 100%;
+      justify-self: flex-end;
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+    header > div > nav > a > span{
+      color: red;
+      font-size: 14px;
+      padding: 0 2px;
+      transform: translate(0, -8px);
+    }
+    header > div > nav > a{
+      display: flex;
+      align-items: center;
+      height: 44px;
+      border-radius: 21px;
+      font-size: 18px;
+      text-decoration: none;
+      white-space: nowrap;
+      color: #000;
+      padding: 0 4px;
+    }
+    header > div > nav > a.target{
+      padding: 0 16px;
+      background: #000000;
+      color: #ffffff;
+    }
+  </style>
+  <header>
+    <div>
+      <div class="brand">
+        <img src="there/logos/rohh.svg" alt="Rohhs Icon">
+        <p>Rohh's</p>
+      </div>
+      <nav>
+        <a href="/info">Info <span>s</span></a>
+        <a href="/idea">Idea <span>s</span></a>
+        <a href="/api" class="target">API <span>s</span></a>
+      </nav>
+    </div>
+  </header>
+  <style>
+    main{
+      width: var(--width);
+      margin: 0 auto;
+    }
+    #about > .images{
+      scroll-snap-type: x mandatory;
+    }
+    #about > .images > img{
+      height: 100%;
+      object-fit: contain;
+      scroll-snap-align: start;
+    }
+    @media (max-width:100vh){
+      #about > .images{
+        height: 100vw;
+        display: flex;
+        overflow-x: auto;
+      }
+    }
+    @media (max-height: 100vw){
+      #about > .images{
+        height: 401px;
+        display: flex;
+        overflow-x: auto;
+      }
+      header > div{
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 0 2px;
+      }
+    }
+  </style>
+  <main>
+    <div id="about">
+      <div class="images">
+        <img src="/there/placeholder/image.png" alt="Image description 1">
+        <img src="/there/placeholder/image.png" alt="Image description 2">
+        <img src="/there/placeholder/image.png" alt="Image description 3">
+        <img src="/there/placeholder/image.png" alt="Image description 4">
+      </div>
+    </div>
+    <div id="contact"></div>
+    <div id="other"></div>
+  </main>
+  <script src="were/scripts/action.js"></script>
+  <script src="/there/scripts/0/footer.js"></script>
+  <script>
+    async function init(){
+      // add to the end of body '/there/patterns/fullscreen-image.html'
+      await loadAndMoveContent('/there/patterns/0/footer.html', document.body);
+      
+      // footer
+      await updateFooter('rohhs.com', 0);
+      await updateFooter('There are personal page.', 4);
+    }
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

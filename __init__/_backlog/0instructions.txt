@@ -1,0 +1,44 @@
+__backlog
+
+#feature 2
+Another way to maintain it through API sending json
+"services": POST [
+  [
+    "name of the service",
+    "segregate name",
+    default 0 set [0] as title and [1] as description || 1(2nd - separator) || 2(2nd - regex) || 3(2nd - API strict identificators) || 11((create object) 2nd - contain 2 separators for key and value) || 22(create object)( 2nd - contain 2 regex instructions for key and value) || 211 (create object within object) and so on
+  ],
+] || GET [
+  {
+    "name": "name of the service",
+    "price": "price to display",
+    "type": "per something",
+    "format": "offline, online",
+    "uid": 432164153198518
+  }
+] 
+// services [n][0] can contain main title
+// services [n][1] can contain HTML for customisation to add actions or other options
+"contacts": POST [
+  [  
+    "displayed name of object",
+    "action required to make in digital",
+    default 0 set for <a> [0] as innerHTML and [1] as href || 1(2nd - separator) || 2(2nd - regex) || 3(2nd - API strict identificators) || 11((create object) 2nd - contain 2 separators for key and value) || 22(create object)( 2nd - contain 2 regex instructions for key and value) || 211 (create object within object) and so on
+  ]
+] || GET [
+  {
+    "title":"represent the method",
+    "action": "link, html supported emmet links (tel: mailto: etc.)"
+    "uid": 4444567890
+  }
+]
+
+#feature 1
+All of those saves in title of the object
+
+-- nil: names (csv); images (csv); links (csv)
+-- iln: images (csv); links (csv); names (csv)
+
+and other
+
+-- n(brand,title,description,price,per,etc):names (csv:in order of ())

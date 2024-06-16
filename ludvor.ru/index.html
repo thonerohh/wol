@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title>
+  <meta name="description" content="">
+
+  <meta property='og:title' content=''/>
+  <meta property='og:description' content=''/>
+  <meta property='og:image' content=''/>
+  <meta property='og:url' content=''/>
+  <meta property='og:site_name' content=''/>
+  <meta property='og:locale' content='ru_RU'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/there/styles/null.css">
+  <link rel="stylesheet" href="/there/styles/root.css">
+  <link rel="stylesheet" href="/there/styles/good.css">
+  <link rel="stylesheet" href="/there/styles/goods.css">
+  <link rel="stylesheet" href="/there/styles/good-group-b.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="brand"><img src="there/logo.jpg" alt=""><span>Людинский дворик</span></div>
+      <div class="g">
+        <a href="">г. Людиново, ул. Володарского, д. 25А</a>
+        <a href="tel:+79252225066">+7 (925) 222-50-66</a>
+      </div>
+    </div>
+  </header>
+  <style>
+    #intro,
+    #about,
+    #TB1,
+    #product,
+    #contact{
+      width: var(--width);
+      margin: 0 auto;
+    }
+    #product{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(var(--quint), 1fr));
+      gap: 0 4px;
+    }
+    #product .product:hover{
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+    #product .product > p{
+      display: none;
+    }
+    #intro > img{
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+    #intro > nav{
+      display: flex;
+      align-items: center;
+      padding: 0 8px;
+      overflow-x: auto;
+      background: #ffffff;
+      height: 54px;
+      transform: translate(0,4px);
+    }
+    #intro > img{
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+      transform: scaleY(1.02) translateY(4px);
+      z-index: -1;
+    }
+    #intro > .g{
+      display: grid;
+      grid-template-columns: calc(var(--sext) + var(--half)) 1fr;
+    }
+    #intro > .g > .gl{
+      padding: 8px 0 0 0;
+    }
+    #intro > .g ul{
+      padding: 12px 0;
+    }
+    #contact,
+    #about{
+      margin: 44px auto;
+    }
+    form#TB1{
+      height: max-content;
+      margin: 24px auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    form#TB1 > button{
+      background: #ffffff;
+      padding: 8px 24px;
+      font-size: 19px;
+      border-radius: 19px;
+    }
+    #TB1{
+      display: none !important;
+      overflow-x: auto;
+      max-width: 100vw;
+    }
+    #product > .product > img{
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    #intro span,
+    #intro h2,
+    #intro h1,
+    #intro p{
+      margin-left: 24px;
+      display: block;
+    }
+    #intro p{
+      padding: 18px 0 0 0;
+    }
+    #intro ul li{
+      display: flex;
+      align-items: center;
+      list-style: none;
+      font-weight: 600;
+    }
+    #intro ul li img{
+      width: 44px;
+      height: 44px;
+      margin-right: 8px;
+    }
+  </style>
+  <main>
+    <div id="intro">
+      <img src="there/photo_2024-03-06_12-58-54.jpg" alt="Фотография главного входа в кафетерий в области">
+      <nav>
+        <a href="#contact" class="target">Заказать</a>
+        <a href="#product">Посмотреть меню</a>
+      </nav>
+      <div class="g">
+        <div class="gl">
+          <span>Оригинальные и дешевые съестности</span>
+          <h1>Людинский дворик</h1>
+          <h2>Кафетерий в области</h2>
+          <p>Описание включенных преимуществ:</p>
+          <ul>
+            <li><img src="there/plus.svg" alt="Иконка плюса">Дешево</li>
+            <li><img src="there/home.svg" alt="Иконка дома" style="transform: scaleX(-1);">По-домашнему</li>
+            <li><img src="there/heart.svg" alt="Иконка сердца">Качественно</li>
+          </ul>
+        </div>
+        <!-- <img src="/there/placeholder/image.png" alt="" class="yandex-advertising"> -->
+      </div>
+    </div>
+    <div id="about">
+      <h2 class="dec">Подробнее о нас</h2>
+      <p>Добро пожаловать в наш уютный кафетерий "Людский Дворик"! Здесь каждый гость окунется в атмосферу домашнего уюта и тепла. Наше меню наполнено изысканными домашними блюдами, свежеиспеченными выпечками и ароматным кофе. Под старинные лампы и среди теплых деревянных столов каждый почувствует себя как дома. Приглашаем насладиться вкусом и атмосферой в "Людском Дворике"!</p>
+    </div>
+    <form action="" id="TB1"><button>Выпечка</button><button>Горячее</button><button>Закуски</button><button>Напитки</button><button>Супы</button></form>
+    <style>
+      #product > .product{
+        position: relative;
+      }
+      #product > .product:hover{
+        z-index: 10;
+
+      }
+      #product > .product:after{
+        content: attr(data-price);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #ffffff;
+        padding: 4px 8px;
+        font-size: 19px;
+        font-weight: 600;
+        z-index: 10;
+      }
+    </style>
+    <div id="product" class="s">
+    </div>
+    <div id="contact" class="s formal">
+      <h2 class="dec">Наши контакты</h2>
+      <span>Информация как добраться</span>
+      <div class="g">
+        <div>
+          <a href="tel:+79252225066">+7 (925) 222-50-66</a>
+          <a href="" class="address">249406, Калужская область, г. Людиново, ул. Володарского, д. 25А</a>
+        </div>
+      </div>
+    </div>
+    <div id="other" class="s">
+      <h2 class="dec">Дополнительно</h2>
+      <span>Дополнительная информация о контексте</span>
+      <div class="s">
+        <a href="https://rohhs.com" class="target-b">Техническая поддержка</a>
+        <a href="/rules" class="target-b">Правила сайта</a>
+        <!-- <a href="/other" class="target-b">Документы сайта</a> -->
+      </div>
+    </div>
+  </main>
+  <style>
+    
+    #TF{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background: #ffffff;
+      width: 100%;
+      height: 100%;
+      padding: 24px;
+      border-radius: 24px 0 0 0;
+      box-shadow: 0 0 24px 0 rgba(0,0,0,0.24);
+      transition: 0.6s;
+      z-index: 999;
+      transform: translate(-100%,0);
+    }
+    #TF.active{
+      
+      transform: translate(0,0);
+    }
+    #TF > button{
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #ffffff;
+      padding: 8px 16px;
+      font-size: 24px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+    #TF > div{
+      display: grid;
+      gap: 12px;
+    }
+    #TF > div > img{
+      width: 100%;
+      height: 100vh;
+      object-fit: contain;
+    }
+    #TF > div > p{
+      font-size: 19px;
+    }
+  </style>
+  <script src="/there/scripts/generator.js"></script>
+  <script src="/there/scripts/goods.js"></script>
+  <script src="/there/scripts/0/footer.js"></script>
+  <script>
+    async function init(){
+      // add to the end of body '/there/patterns/fullscreen-image.html'
+      await loadAndMoveContent('/there/patterns/0/footer.html', document.body);
+      await loadAndMoveContent('/there/patterns/fullscreen-image.html', document.body);
+      
+      // footer
+      await updateFooter('ludvor.ru', 0);
+      await updateFooter('Сайт-меню кафетерия', 4);
+
+      await generateProducts('there/products.csv', '#product')
+    }
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+  <script>
+    async function generateProducts(data, place){
+      const placing = document.querySelector(place);
+      // Fetch the CSV file from the server
+      fetch(data)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(csv => {
+          const products = parseCSV(csv);
+          displayProducts(products);
+        })
+        .catch(error => {
+          console.error('There was a problem fetching the CSV file:', error);
+        });
+
+      // Function to parse CSV contents
+      function parseCSV(csv) {
+        const lines = csv.split('\n');
+        const products = [];
+
+        // Assuming the first line contains headers
+        const headers = lines[0].split(',');
+
+        for (let i = 1; i < lines.length; i++) {
+          const data = lines[i].split(',');
+          if (data.length === headers.length) {
+            const product = {};
+            for (let j = 0; j < headers.length; j++) {
+              product[headers[j].trim()] = data[j].trim();
+            }
+            products.push(product);
+          }
+        }
+
+        return products;
+      }
+
+      // Function to display products on the web page
+      function displayProducts(products) {
+        const productDiv = placing;
+        console.log(products);
+        console.log(productDiv);
+
+        products.forEach(productData => {
+          const product = document.createElement('div');
+          product.className = 'product';
+          // add data.price to the product
+          product.dataset.price = productData.price;
+          product.onclick = function() {
+            openPopUp(this);
+          };
+
+          const image = document.createElement('img');
+          image.src = 'there/' + productData.image;
+          image.alt = productData.alt;
+
+          const paragraph = document.createElement('p');
+          paragraph.textContent = `${productData.name} - ${productData.price}`;
+
+          product.appendChild(image);
+          product.appendChild(paragraph);
+
+          productDiv.appendChild(product);
+        });
+      }
+    }
+
+  </script>
+</body>
+</html>

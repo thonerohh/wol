@@ -1,0 +1,14 @@
+I have such .product in #product div.
+
+<div class="product" onclick="openPopUp(this)">
+  <img src="/there/placeholder/image.png" alt="">
+  <p>Lorem ipsum dolor sit amet consectetur - price - type of product</p>
+</div>
+
+I have such products.csv from which I need to load data and display it:
+alt will be displayed in #product>.product>img[alt] and image will be in #product>.product>img[src]. Name and price will be displayed in #product>.product>p
+
+name,price,image,alt
+Сникерс,980 р за 1 кг,photo_9_2024-03-24_20-21-30.jpg,Фотография необычного сладкого торта с орехами и сладкой вареной массой 
+Бизнес ланч,300 р,image1 (1).jpg,Фотография бизнес ланча
+Бизнес ланч,300 р,image1 (2).jpg,Фотография бизнес ланча 

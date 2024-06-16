@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rohh Thone</title>
+  <meta name="description" content="There are personal page.">
+
+  <meta property='og:title' content=''/>
+  <meta property='og:description' content=''/>
+  <meta property='og:image' content=''/>
+  <meta property='og:url' content=''/>
+  <meta property='og:site_name' content=''/>
+  <meta property='og:locale' content='gb_en'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/there/styles/null.css">
+  <link rel="stylesheet" href="/there/styles/root.css">
+  <link rel="stylesheet" href="/there/styles/good.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+  <header>
+    <div class="brand"></div>
+    <nav><a href=""></a><a href=""></a><a href=""></a><a href="" class="target"></a></nav>
+  </header>
+  <main>
+    <div id="about"></div>
+    <div id="contact"></div>
+    <div id="other"></div>
+  </main>
+  <script src="/there/scripts/generator.js"></script>
+  <script src="/there/scripts/goods.js"></script>
+  <script src="/there/scripts/0/footer.js"></script>
+  <script>
+    async function init(){
+      // add to the end of body '/there/patterns/fullscreen-image.html'
+      await loadAndMoveContent('/there/patterns/0/footer.html', document.body);
+      await loadAndMoveContent('/there/patterns/fullscreen-image.html', document.body);
+      
+      // footer
+      await updateFooter('rohhs.com', 0);
+      await updateFooter('There are personal page.', 4);
+    }
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

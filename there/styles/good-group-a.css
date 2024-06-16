@@ -1,0 +1,186 @@
+header{
+  background: #ffffff;
+}
+header > div{
+  justify-content: space-between;
+  align-items: center;
+}
+header .brand{
+  display: flex;
+}
+header .brand > img{
+  height:44px;
+  width:44px;
+  object-fit: cover;
+  margin-right: 8px;
+  border-radius: 21px;
+}
+header .brand > span{
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 5px;
+  letter-spacing: -1px;
+}
+header nav{
+  display: flex;
+  overflow-x: auto;
+  gap: 4px;
+}
+
+#intro > div{
+  width: var(--width);
+  margin: 0 auto;
+  height: 100%;
+}
+#intro > div > img{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  transform: scaleY(1.02) translateY(4px);
+  z-index: -1;
+}
+#transition{
+  background: #000000;
+  color: #ffffff;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#transition span{
+  padding: 16px 0;
+  font-size: 31px;
+}
+#intro > div > .g{
+  display: flex;
+}
+#intro img{
+  width: 500px;
+  aspect-ratio: 5/3;
+  max-width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+#intro .g1{
+  padding: 12px 18px;
+}
+#intro .g1 span{
+  opacity: 0.5;
+  font-size: 17px;
+}
+#intro .g1 h1{
+  padding: 8px 0 12px 0;
+}
+#intro .g1 h2{
+  padding: 0 0 8px 0;
+}
+#intro .g1 p{
+  padding: 0 0 8px 0;
+}
+#intro .g1 ul{
+  list-style: circle;
+}
+#about{
+  margin: 24px auto;
+  width: var(--width);
+  display: grid;
+  grid-template-columns: 1fr var(--sext);
+  gap: 8px 18px;
+}
+#about > h2,
+#about > span{
+  grid-column: 1 / -1;
+}
+#about > p{
+  /* line break with "-"*/
+  word-break: break-all;
+  word-wrap: break-word;
+  font-size: 19px;
+}
+
+
+/* test */
+#contact{
+  width: var(--width);
+  margin: 24px auto;
+}
+#contact > .g{
+  margin: 24px 0;
+  display: grid;
+  grid-template-columns: calc(var(--sext) + var(--half)) 1fr;
+}
+#contact > .g > div > a{
+  display: block;
+  height: 44px;
+  border-radius: 21px;
+  margin: 0 0 12px 0;
+  width: max-content;
+  background: #ffffff;
+}
+#contact > .g > form{
+  display: flex;
+  flex-direction: column;
+}
+#contact > .g > form > label{
+  margin: 12px 0 0 0;
+}
+#contact > .g > form > input{
+  height: 34px;
+  padding: 0 12px;
+}
+#contact > .g > form > input,
+#contact > .g > form > textarea{
+  background: #ffffff;
+  border-radius: 16px;
+  margin: 8px 0 0 0;
+}
+#contact > .g > form > textarea{
+  padding: 8px 12px;
+  min-height: 100px;
+  height: 150px;
+  max-height: 250px;
+  resize: vertical;
+
+}
+#contact > .g > form > button{
+  align-self: flex-end;
+  max-width: max-content;
+  padding: 12px 18px;
+}
+#contact > iframe{
+  height: 400px;
+  width: 100%;
+  border-radius: 33px;
+  background: #000000;
+}
+
+@media (max-width:100vh){
+  #about{
+    grid-template-columns: 1fr;
+    gap: 24px 0;
+    padding: 0 24px;
+  }
+  #contact{
+    padding: 0 24px;
+  }
+  #contact > .g{
+    display: block;
+  }
+}
+
+a{
+  font-size: 19px;
+  padding: 6px 18px 8px 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a.target{
+  border-radius: 19px;
+  background: #000000;
+  color: #ffffff;
+}
+a.target-a{
+  border-radius: 19px;
+  background: var(--background);
+  font-weight: 600;
+}

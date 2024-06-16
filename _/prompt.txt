@@ -1,0 +1,35 @@
+Why is this code returning error?
+Warning: foreach() argument must be of type array|object, string given in /var/www/vhosts/agronomea.ru/httpdocs/there/script/send2.php on line 46
+
+<form action="there/script/send2.php" method="post" enctype="multipart/form-data">
+  <h3>Оставить заявку <span>быстро</span></h3>
+  <label for="input-phone">Ваш телефон *</label>
+  <input type="text" id="input-phone" name="phone" placeholder="Ваш телефон" required>
+  <label for="input-name">Ваше имя *</label>
+  <input type="text" id="input-name" name="name" placeholder="Ваше имя" required>
+  <label for="input-text">Ваше сообщение</label>
+  <textarea id="input-text" name="text" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+  <label for="input-file">Ваши изображения</label>
+  <input type="file" id="input-file" name="images" multiple accept="image/png, image/jpeg, image/jpg, image/gif">
+  <button type="submit">Отправить</button>
+  <span>* Обязательные поля для заполнения</span>
+  <span>Дополнительно Вы можете загрузить фотографии участка, для того чтобы было проще оценить объем работ.</span>
+  <span>Нажимая кнопку отправить, Вы подтверждаете согласие с <u>правилами сайта</u></span>
+</form>
+
+<?php
+//...
+function upload_imgs($files) {
+//...
+
+//...
+foreach ($files["tmp_name"] as $key => $tmp_name) {
+//...
+
+//...
+if (!empty($_FILES['images'])) {
+  echo "Uploading images...";
+  $uploaded_files = upload_imgs($_FILES['images']);
+}
+//...
+

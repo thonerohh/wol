@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="form">
+    <rect id="empty" class="cls-2" width="144" height="144"/>
+  </g>
+  <g id="object">
+    <path class="cls-1" d="m101.74,63h-6.24v-5.19c0-21.71-12.78-26.27-23.5-26.27s-23.5,4.56-23.5,26.27v5.19h-6.24c-5.42,0-9.35,5.16-7.93,10.39l6.8,24.91c2.28,8.38,9.9,14.2,18.59,14.2h24.56c8.69,0,16.31-5.82,18.59-14.2l6.8-24.91c1.42-5.23-2.51-10.39-7.93-10.39Zm-42.24,0v-5.19c0-14.09,6.45-15.27,12.5-15.27s12.5,1.18,12.5,15.27v5.19h-25Z"/>
+  </g>
+</svg>

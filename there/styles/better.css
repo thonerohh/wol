@@ -1,0 +1,9 @@
+html{
+  background: #f0f0f0;
+}
+header{
+  background: #ffffff;
+}
+main{
+  min-height: 100vh;
+}

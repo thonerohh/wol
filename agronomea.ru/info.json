@@ -1,0 +1,50 @@
+{
+    "info":{
+        "owner":"Рохх",
+        "date": "03/31/2024",
+        "creator":"Rohh Thone"
+    },
+    "company":{
+        "name": "Agronomea",
+        "address": "г. Москва, Малый проспект 47",
+        "phone": "+79258178613",
+        "email": "wert15@bk.ru"
+    },
+    "domain":{
+        "domain": "agronomea.ru",
+        "ip_address": "217.160.157.105",
+        "whois_info": {
+        "domain_name": "AGRONOMEA.RU",
+        "registrar": "REGRU-RU",
+        "creation_date": "2024-03-26 18:53:32",
+        "expiration_date": "2025-03-26 18:53:32",
+        "name_servers": [
+            "ns1.reg.ru.",
+            "ns2.reg.ru."
+        ],
+        "status": "REGISTERED, DELEGATED, UNVERIFIED",
+        "emails": null,
+        "org": null
+    }
+    },
+    "server": {
+        "platform": "Linux",
+        "platform_release": "5.15.0-72-generic",
+        "platform_version": "#79-Ubuntu SMP Wed Apr 19 08:22:18 UTC 2023",
+        "architecture": "x86_64",
+        "hostname": "plesk.rohhs.com",
+        "ip_address": "127.0.0.1",
+        "memory": {
+            "total": 25174069248,
+            "available": 23749939200,
+            "used": 907448320,
+            "percentage": 5.7
+        },
+        "disk": {
+            "total": 665811062784,
+            "used": 7850921984,
+            "free": 657943363584,
+            "percentage": 1.2
+        }
+    }
+}
