@@ -1,0 +1,27 @@
+#advantages > div onDOCLoad resize symbols width
+
+      // [
+      //     "\"ID\"",
+      //     "\"name\"",
+      //     "\"code\"",
+      //     "\"size\"",
+      //     "\"color\"",
+      //     "\"material\"",
+      //     "\"compound\"",
+      //     "\"price\"",
+      //     "\"images\"",
+      //     "\"date\"",
+      //     "\"collection\"",
+      //     "\"status\"",
+      //     "\"base\"",
+      //     "\"other\"",
+      //     "\"yandex_market\"",
+      //     "\"sber_market\"",
+      //     "\"wildberrries\"",
+      //     "\"ozon\"",
+      //     "\"display\"",
+      //     "\"date_created\"",
+      //     "\"date_edited\"",
+      //     "\"ip\"",
+      //     "\"user_agent\""
+      // ]

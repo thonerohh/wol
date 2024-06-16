@@ -1,0 +1,239 @@
+<!-- Croki products -->
+<style>
+  #croki{
+    /* display: none; */
+    padding: var(--size0) var(--size1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+  }
+  #croki > h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: var(--size01) var(--size11) var(--size02) var(--size11);
+    z-index: 2;
+  }
+  #croki > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    scroll-snap-type: y mandatory;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+  #croki > div > .product:last-of-type{
+    margin-bottom: 10px;
+  }
+  #croki > div > .product{
+    scroll-margin-inline-end: 100px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size0);
+    width: 100%;
+    height: calc(100vh - 8px);
+  }
+  #croki > div > .product > .gallery{
+    display: flex;
+    overflow-x: auto;
+  }
+  #croki > div > .product > .gallery::-webkit-scrollbar{
+    /* display: none; */
+  }
+  #croki > div > .product > .gallery{
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+  }
+  #croki > div > .product > .gallery > img{
+    /* max-height: 50vw; */
+    scroll-snap-align: start;
+  }
+  #croki h3{
+    font-size: var(--size12);
+    padding: var(--size0) var(--size02) 0 var(--size02);
+    font-weight: 700;
+    color: #ffffff;
+  }
+  #croki .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size0);
+  }
+  #croki .buttons .decorative{
+    display: flex;
+    gap: var(--size0);
+  }
+  #croki .buttons .decorative > div{
+    display: flex;
+  }
+  #croki .buttons button.icon{
+    padding: unset;
+  }
+  #croki .buttons button{
+    height: 44px;
+    min-width: 44px;
+    font-weight: 600;
+    font-size: var(--size10);
+    background: black;
+    color: white;
+    padding: 0 var(--size02);
+  }
+  #croki .buttons button img{
+    transform: scale(0.8);
+  }
+</style>
+<section id="croki">
+  <h2></h2>
+  <div>
+    <div class="product">
+      <div class="gallery">
+        <img src="https://fashioncroki.ru/d/images/%D0%92%D0%B5%D0%B6%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%B0%D0%B2%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%D0%B4/%D0%91%D1%80%D1%8E%D0%BA%D0%B8%20%D0%91%D1%80%D0%94-37.1/%D0%91%D1%80%D0%94-37.1%20%D0%A2%D0%A1%D0%A0%D1%88/4.jpg" alt="">
+        <img src="https://fashioncroki.ru/d/images/%D0%92%D0%B5%D0%B6%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%B0%D0%B2%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%D0%B4/%D0%91%D1%80%D1%8E%D0%BA%D0%B8%20%D0%91%D1%80%D0%94-37.1/%D0%91%D1%80%D0%94-37.1%20%D0%A2%D0%A1%D0%A0%D1%88/1.jpg" alt="">
+        <img src="https://fashioncroki.ru/d/images/%D0%92%D0%B5%D0%B6%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%B0%D0%B2%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%D0%B4/%D0%91%D1%80%D1%8E%D0%BA%D0%B8%20%D0%91%D1%80%D0%94-37.1/%D0%91%D1%80%D0%94-37.1%20%D0%A2%D0%A1%D0%A0%D1%88/2.jpg" alt="">
+      </div>
+      <h3>Брюки</h3>
+      <div class="buttons">
+        <button>Подробнее</button>
+        <div class="decorative">
+          <div>
+            <button style="font-weight: 600;"><</button>
+            <button style="font-weight: 600;">></button>
+          </div>
+          <button class="icon"><img src="/.there/image/bag_inverse.svg" alt="Icon of bag"></button>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="gallery">
+        <img src="https://fashioncroki.ru/d/images/%D0%92%D0%B5%D0%B6%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%B0%D0%B2%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%D0%B4/%D0%96%D0%B0%D0%BA%D0%B5%D1%82%20%D0%96%D0%BA-15/%D0%96%D0%BA-15%20%D0%A1%D0%A0%D0%9F%D1%88/094A7357.jpg" alt="">
+        <img src="https://fashioncroki.ru/d/images/%D0%92%D0%B5%D0%B6%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%B0%D0%B2%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%D0%B4/%D0%96%D0%B0%D0%BA%D0%B5%D1%82%20%D0%96%D0%BA-15/%D0%96%D0%BA-15%20%D0%A1%D0%A0%D0%9F%D1%88/094A7287.jpg" alt="">
+        <img src="https://fashioncroki.ru/d/images/%D0%92%D0%B5%D0%B6%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%B0%D0%B2%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%D0%B4/%D0%96%D0%B0%D0%BA%D0%B5%D1%82%20%D0%96%D0%BA-15/%D0%96%D0%BA-15%20%D0%A1%D0%A0%D0%9F%D1%88/094A7299.jpg" alt="">
+      </div>
+      <h3>PRODUCT_NAME, SAME_AS, PRICE</h3>
+      <div class="buttons">
+        <button>Подробнее</button>
+        <div class="decorative">
+          <div>
+            <button style="font-weight: 600;"><</button>
+            <button style="font-weight: 600;">></button>
+          </div>
+          <button class="icon"><img src="/.there/image/bag_inverse.svg" alt="Icon of bag"></button>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="gallery">
+        <img src="/.there/image/decorative-image.svg" alt="">
+        <img src="/.there/image/image.svg" alt="">
+        <img src="/.there/image/decorative-image.svg" alt="">
+      </div>
+      <h3>PRODUCT_NAME, SAME_AS, PRICE</h3>
+      <div class="buttons">
+        <button>Подробнее</button>
+        <div class="decorative">
+          <div>
+            <button style="font-weight: 600;"><</button>
+            <button style="font-weight: 600;">></button>
+          </div>
+          <button class="icon"><img src="/.there/image/bag_inverse.svg" alt="Icon of bag"></button>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="gallery">
+        <img src="/.there/image/decorative-image.svg" alt="">
+        <img src="/.there/image/image.svg" alt="">
+        <img src="/.there/image/decorative-image.svg" alt="">
+      </div>
+      <h3>PRODUCT_NAME, SAME_AS, PRICE</h3>
+      <div class="buttons">
+        <button>Подробнее</button>
+        <div class="decorative">
+          <div>
+            <button style="font-weight: 600;"><</button>
+            <button style="font-weight: 600;">></button>
+          </div>
+          <button class="icon"><img src="/.there/image/bag_inverse.svg" alt="Icon of bag"></button>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="gallery">
+        <img src="/.there/image/decorative-image.svg" alt="">
+        <img src="/.there/image/image.svg" alt="">
+        <img src="/.there/image/decorative-image.svg" alt="">
+      </div>
+      <h3>PRODUCT_NAME, SAME_AS, PRICE</h3>
+      <div class="buttons">
+        <button>Подробнее</button>
+        <div class="decorative">
+          <div>
+            <button style="font-weight: 600;"><</button>
+            <button style="font-weight: 600;">></button>
+          </div>
+          <button class="icon"><img src="/.there/image/bag_inverse.svg" alt="Icon of bag"></button>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="gallery">
+        <img src="/.there/image/decorative-image.svg" alt="">
+        <img src="/.there/image/image.svg" alt="">
+        <img src="/.there/image/decorative-image.svg" alt="">
+      </div>
+      <h3>PRODUCT_NAME, SAME_AS, PRICE</h3>
+      <div class="buttons">
+        <button>Подробнее</button>
+        <div class="decorative">
+          <div>
+            <button style="font-weight: 600;"><</button>
+            <button style="font-weight: 600;">></button>
+          </div>
+          <button class="icon"><img src="/.there/image/bag_inverse.svg" alt="Icon of bag"></button>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="gallery">
+        <img src="/.there/image/decorative-image.svg" alt="">
+        <img src="/.there/image/image.svg" alt="">
+        <img src="/.there/image/decorative-image.svg" alt="">
+      </div>
+      <h3>PRODUCT_NAME, SAME_AS, PRICE</h3>
+      <div class="buttons">
+        <button>Подробнее</button>
+        <div class="decorative">
+          <div>
+            <button style="font-weight: 600;"><</button>
+            <button style="font-weight: 600;">></button>
+          </div>
+          <button class="icon"><img src="/.there/image/bag_inverse.svg" alt="Icon of bag"></button>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="gallery">
+        <img src="/.there/image/decorative-image.svg" alt="">
+        <img src="/.there/image/image.svg" alt="">
+        <img src="/.there/image/decorative-image.svg" alt="">
+      </div>
+      <h3>PRODUCT_NAME, SAME_AS, PRICE</h3>
+      <div class="buttons">
+        <button>Подробнее</button>
+        <div class="decorative">
+          <div>
+            <button style="font-weight: 600;"><</button>
+            <button style="font-weight: 600;">></button>
+          </div>
+          <button class="icon"><img src="/.there/image/bag_inverse.svg" alt="Icon of bag"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

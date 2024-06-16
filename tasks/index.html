@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Organise, there</title>
+  <meta name="description" content="Place where are available to schedule actions.">
+
+  <meta property='og:title' content='Organise, there'/>
+  <meta property='og:description' content='Place where are available to schedule actions.'/>
+  <meta property='og:image' content='URL_TO_IMAGE'/>
+  <meta property='og:url' content='https://planer.unyconn.com'/>
+  <meta property='og:site_name' content='plan'/>
+  <meta property='og:locale' content='en_GB'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/.there/style/null.css">
+  <link rel="stylesheet" href="/.there/style/default.css">
+  <link rel="stylesheet" href="/.there/style/one.css">
+  <link rel="stylesheet" href="/.there/style/root.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+  <style>
+    main > div:first-of-type > .see{
+      display: flex;
+      overflow-x: auto;
+      max-height: 600px;
+      scroll-snap-type: x mandatory;
+    }
+    main > div:first-of-type > .see > img{
+      scroll-snap-align: start;
+    }
+    main > div:first-of-type > ol{
+      list-style: none;
+    }
+    main > div:first-of-type > ol > .title{
+      font-size: var(--size3);
+    }
+    main > div:first-of-type > ol > .prescript{
+      opacity: 0.5;
+    }
+    main > div:first-of-type > ol > .post{
+      font-size: var(--size1);
+    }
+    main > div:first-of-type > ol ul{
+      list-style: disc;
+      padding-top: var(--size1);
+    }
+    main > div:first-of-type > ol a{
+      display: block;
+      margin-top: 24px;
+      padding: var(--size02) var(--size1);
+    }
+  </style>
+  <main>
+    <div>
+      <div class="see">
+        <img src="/.there/image/image.svg">
+        <img src="/.there/image/image.svg">
+        <img src="/.there/image/image.svg">
+        <img src="/.there/image/image.svg">
+        <img src="/.there/image/image.svg">
+      </div>
+      <ol>
+        <li class="prescript">5.22.2024 14:00 +3:08</li>
+        <li class="title">Lorem, ipsum.</li>
+        <li class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptates reprehenderit, fugit voluptatum consequuntur omnis.</li>
+        <li>
+          <ul>
+            <li>Small</li>
+            <li>Simple</li>
+            <li>Local</li>
+            <li>Rohhs</li>
+          </ul>
+        </li>
+        <li>
+          <a href="./add">Add a task</a>
+        </li>
+      </ol>
+    </div>
+  </main>  
+</body>
+</html>

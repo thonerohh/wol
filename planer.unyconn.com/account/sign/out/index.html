@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sign out, there</title>
+  <meta name="description" content="Place to sign out from everywhere here.">
+
+  <meta property='og:title' content='Sign out, there'/>
+  <meta property='og:description' content='Place to sign out from everywhere here.'/>
+  <meta property='og:image' content='https://planer.unyconn.com/.there/image/logo.png'/>
+  <meta property='og:url' content='https://planer.unyconn.com'/>
+  <meta property='og:site_name' content='Planer'/>
+  <meta property='og:locale' content='en_GB'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/.there/style/null.css">
+  <link rel="stylesheet" href="/.there/style/one.css">
+  <link rel="stylesheet" href="/.there/style/root.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+  
+  <header>
+    <div class="brand">
+      <img src="https://planer.unyconn.com/.there/logo.svg" alt="Logotype of object" title="Plan Unyconn">
+      <span>Planer</span>
+    </div>
+    <nav>
+      <a href="https://planer.unyconn.com/">Main</a>
+      <a href="https://planer.unyconn.com/add">Tasks</a>
+      <a href="https://planer.unyconn.com/account/sign/">Sign</a>
+    </nav>
+  </header>
+  <script>
+    async function signOut(){
+      // remove all cookies with planer string in name
+      var cookies = document.cookie.split(';');
+      for(var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf('=');
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        if(name.includes('planer')){
+          document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT';
+        }
+      }
+    }
+
+    async function init(){
+      await signOut();
+      window.location.href = 'https://planer.unyconn.com/';
+    }
+
+    window.onload = init;
+  </script>
+</body>
+</html>

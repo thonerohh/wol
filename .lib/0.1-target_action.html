@@ -1,0 +1,78 @@
+    <!-- Target Action 1 -->
+    <style>
+      #TA1{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        background: #ffffff;
+        padding: var(--size02);
+      }
+      #TA1 > form > legend{
+        font-size: var(--size12);
+        font-weight: 600;
+        padding-bottom: var(--size01);
+      }
+      #TA1 > form > input{
+        background: #f0f0f0;
+        padding: 0 var(--size01);
+        height: 44px;
+        min-width: 350px;
+        display: block;
+      }
+      #TA1 > form > button{
+        background: #000000;
+        color: #ffffff;
+        padding: 0 var(--size01);
+        height: 34px;
+        display: block;
+        margin-top: var(--size01);
+      }
+      #TA1 > form > ul{
+        list-style: decimal;
+        font-size: var(--size10);
+        padding-top: var(--size01);
+      }
+      #TA1 > form > ul > li:after{
+        content: ".";
+      }
+      #TA1 > form > ul a{
+        color: #3300CC;
+      }
+      #TA1 > img{
+        aspect-ratio: 3/2;
+      }
+      @media (max-width: 600px){
+        #TA1{
+          grid-template-columns: 1fr;
+        }
+        #TA1 > img{
+          width: 100%;
+        }
+        #TA1 > form > input{
+          width: 100%;
+          min-width: unset;
+        }
+      }
+      #TA1 form > a{
+        display: flex;
+        align-items: center;
+        width: max-content;
+        background: #f0f0f0;
+        padding: 0 var(--size01);
+        min-height: 34px;
+        margin-top: 12px;
+      }
+    </style>
+    <section id="TA1">
+      <form action="/.there/script/tool/send.js" method="post">
+        <legend>Связаться с нами</legend>
+        <input type="tel" placeholder="+7 000 000 00 00" required>
+        <button type="submit">Заказать</button>
+        <a href="tel:+79118294993">Позвонить +7 (911) 829-49-93</a>
+        <ul>
+          <li>Подтверждаю, что слежу за безопасностью</li>
+          <li>Подтвержадю, что знаком с <a href="/rules">правилами</a></li>
+          <li>Подтвержадю, что знаком с <a href="https://92.mchs.gov.ru/glavnoe-upravlenie/sily-i-sredstva/gosudarstvennaya-inspekciya-po-malomernym-sudam/normativno-pravovye-akty/pravila-polzovaniya-malomernymi-sudami-na-vodnyh-obektah-rossiyskoy-federacii">правилами управления маломерными судами</a></li>
+        </ul>
+      </form>
+      <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+    </section>

@@ -1,0 +1,13 @@
+/* Floating Container */
+main{
+  min-height: unset;
+  float: left;
+  transition: 0.5s;
+}
+/* Centered Container */
+main.centered{
+  margin-left: var(--half-indent);
+}
+main.centered + aside{
+  width: calc(var(--half-indent) - 33px);
+}

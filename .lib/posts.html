@@ -1,0 +1,112 @@
+<style>
+  section#posts{
+    padding: var(--size02);
+  }
+  section#posts > h2{
+    font-size: var(--size2);
+    padding-bottom: 12px;
+  }
+  section#posts > .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 8px;
+  }
+  section#posts > .grid > div{
+    position: relative;
+  }
+  section#posts > .grid > div > .data{
+    display: none;
+  }
+  section#posts > .grid > div.active{
+    /* grid 3 columns */
+    grid-column: span 3;
+  }
+  section#posts > .grid > div.active > img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  section#posts > .grid > div.active > .data{
+    display: block;
+  }
+  section#posts > .grid > div .gallery{
+    overflow-x: auto;
+    display: flex;
+    gap: 8px;
+    scroll-snap-type: x mandatory;
+  }
+  section#posts > .grid > div .gallery > img{
+    scroll-snap-align: start;
+    /* display: inline-block; */
+  }
+  section#posts > .grid > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+<section id="posts">
+  <h2>Посты</h2>
+  <div class="grid">
+    <div class="active">
+      <img src="https://placehold.co/400x400" alt="" data-url="URL_TO_GRAB_DATA">
+      <div class="data">
+        <span>2023-10-10</span>
+        <span>TAG</span>
+        <span>USER_ID</span>
+        <p>OBJECT_DESCRIPTION</p>
+        <a href="tel:+10000000000">+10000000000</a>
+        <a href="mailto:domain@name.com">domain@name.com</a>
+        <button><img src="/.there/image/heart.svg" alt=""></button>
+        <button><img src="/.there/image/favorite.svg" alt=""></button>
+        <button><img src="/.there/image/chat.svg" alt=""></button>
+      </div>
+    </div>
+    <div>
+      <div class="gallery">
+        <img src="https://placehold.co/400x400" alt="" data-url="URL_TO_GRAB_DATA">
+        <img src="https://placehold.co/400x400" alt="" data-url="URL_TO_GRAB_DATA">
+        <img src="https://placehold.co/400x400" alt="" data-url="URL_TO_GRAB_DATA">
+      </div>
+      <div class="data">
+        <span>2023-10-10</span>
+        <span>TAG</span>
+        <span>USER_ID</span>
+        <p>OBJECT_DESCRIPTION</p>
+        <a href="tel:+10000000000">+10000000000</a>
+        <a href="mailto:domain@name.com">domain@name.com</a>
+        <button><img src="/.there/image/heart.svg" alt=""></button>
+        <button><img src="/.there/image/favorite.svg" alt=""></button>
+        <button><img src="/.there/image/chat.svg" alt=""></button>
+      </div>
+    </div>
+    <div>
+      <img src="https://placehold.co/400x400" alt="" data-url="URL_TO_GRAB_DATA">
+      <div class="data">
+        <span>2023-10-10</span>
+        <span>TAG</span>
+        <span>USER_ID</span>
+        <p>OBJECT_DESCRIPTION</p>
+        <a href="tel:+10000000000">+10000000000</a>
+        <a href="mailto:domain@name.com">domain@name.com</a>
+        <button><img src="/.there/image/heart.svg" alt=""></button>
+        <button><img src="/.there/image/favorite.svg" alt=""></button>
+        <button><img src="/.there/image/chat.svg" alt=""></button>
+      </div>
+    </div>
+    <div>
+      <img src="https://placehold.co/400x400" alt="" data-url="URL_TO_GRAB_DATA">
+      <div class="data">
+        <span>2023-10-10</span>
+        <span>TAG</span>
+        <span>USER_ID</span>
+        <p>OBJECT_DESCRIPTION</p>
+        <a href="tel:+10000000000">+10000000000</a>
+        <a href="mailto:domain@name.com">domain@name.com</a>
+        <button><img src="/.there/image/heart.svg" alt=""></button>
+        <button><img src="/.there/image/favorite.svg" alt=""></button>
+        <button><img src="/.there/image/chat.svg" alt=""></button>
+      </div>
+    </div>
+  </div>
+</section>

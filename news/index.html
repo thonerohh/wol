@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Освети</title>
+  <meta name="description" content="18+ Пойми что чувствуют другие. Смотреть только подготовленным.">
+
+  <meta property='og:title' content='Освети'/>
+  <meta property='og:description' content='18+ Пойми что чувствуют другие. Смотреть только подготовленным.'/>
+  <meta property='og:image' content='.there/image/news.png'/>
+  <meta property='og:url' content='https://news.unyconn.com/'/>
+  <meta property='og:site_name' content='news'/>
+  <meta property='og:locale' content='en_GB'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/.there/style/null.css">
+  <link rel="stylesheet" href="/.there/style/one.css">
+  <link rel="stylesheet" href="/.there/style/root.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src=".there/logonews.svg" alt="Logotype of object" title="News O[1]bject">
+      <span>о.Новости</span>
+    </div>
+  </header>
+  <style>
+    main{
+      min-height: unset;
+      float: left;
+      transition: 0.5s;
+    }
+    main > section{
+      /* background: #ffffff; */
+    }
+    main > section > h2{
+      font-size: var(--size20);
+      word-break: break-all;
+    }
+    main > section:nth-child(1){
+      padding-bottom: 9px;
+      background: #ffffff;
+    }
+    main > section:nth-child(1) > span,
+    main > section:nth-child(1) > h1,
+    main > section:nth-child(1) > p,
+    main > section:nth-child(1) > ul{
+      padding: 0 var(--size02);
+      word-break: break-word;
+      hyphens: manual;
+    }
+    main > section:nth-child(1) > .list{
+      /* height: 400px; */
+      display: flex;
+      overflow-x: auto;
+      margin-bottom: 3px;
+      scroll-snap-type: x mandatory;
+    }
+    main > section:nth-child(1) > .list > img{
+      object-fit: cover;
+      scroll-snap-align: start;
+    }
+    main > section:nth-child(1) > span{
+      font-size: 17px;
+    }
+    main > section:nth-child(1) > h1{
+      padding-top: 8px;
+      font-size: 34px;
+    }
+    main > section:nth-child(1) > p{
+      font-size: 24px;
+      padding-top: 8px;
+      padding-bottom: 3px;
+      line-height: 1.1;
+    }
+    main > section:nth-child(1) > ul > li {
+      padding-top: 7px;
+      padding-bottom: 4px;
+      display: flex;
+      align-items: center;
+    }
+    main > section:nth-child(1) > ul > li > img{
+      height: 27px;
+      margin-right: 8px;
+    }
+    main > section:nth-child(1) > ul > li > span{
+      font-size: var(--size10);
+    }
+    @media (max-width: 600px){
+      main > section:nth-child(1) > .list > img{
+        aspect-ratio: 1/1 !important;
+      }
+    }
+  </style>
+  <main class="centered">
+    <!-- [0] section -->
+    <section>
+      <div class="list">
+        <img src=".there/image/news.png" alt="Image of RussianNews Poster">
+      </div>
+      <span>Осведомляем, освежаем. <span id="brand">Проблемы</span></span>
+      <h1>Повседня</h1>
+      <p>🤐</p>
+      <ul class="no">
+        <li><img src="/.there/image/broken_phone.svg" alt="Icon of ICON_DESCRIPTION"> <span>Иногда</span></li>
+        <li><img src="/.there/image/video-chat.svg" alt="Icon of ICON_DESCRIPTION"> <span>Могут</span></li>
+        <li><img src="/.there/image/user.svg" alt="Icon of ICON_DESCRIPTION"> <span>Быть</span></li>
+        <li><img src=".there/image/earth.svg" alt="Icon of ICON_DESCRIPTION"> <span>Да Нет</span></li>
+      </ul>
+    </section>
+    <!-- Media -->
+    <style>
+      #media{
+        display: none !important;
+      }
+      #newmedia{
+        background: red;
+      }
+      #newmedia > ol{
+        
+
+      }
+    </style>
+    <div id="newmedia">
+      <ol>
+        <li><img src="./there/media/" alt="Not now"></li>
+        <li><img src="./there/media/" alt="Not now"></li>
+      </ol>
+      <h2></h2>
+      <p></p>
+    </div>
+    <style>
+      #media > img{
+        aspect-ratio: 16/9;
+        background: #dddddd;
+      }
+      #media > p{
+        font-size: var(--size10);
+        padding: var(--size0) var(--size02) var(--size1) var(--size02);
+      }
+      #media > div{
+        background: #ffffff;
+        padding: var(--size0) var(--size10) var(--size11) var(--size11);
+      }
+      #media > div > h2{
+        font-size: var(--size10);
+        word-break: break-all;
+        padding-top: 8px;
+        padding-bottom: 12px;
+        line-height: 1.4;
+      }
+      #media > div > p{
+        font-size: var(--size1);
+        line-height: 1.5;
+      }
+    </style>
+    <section id="media" onclick="toggleClass(this.parentNode, 'centered')">
+      <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ducimus vitae laudantium deserunt, quod aperiam totam exercitationem asperiores. Eum, provident debitis.</p>
+      <video src="https://placehold.co/1920x1080.mp4">
+        <source src="https://placehold.co/1920x1080.mp4" type="video/mp4">
+      </video>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ducimus vitae laudantium deserunt, quod aperiam totam exercitationem asperiores. Eum, provident debitis.</p>
+      <div>
+        <h2 id="EI0">Новость вчерашнего дня</h2>
+        <p>Здравствуйте, уважаемые читатели.
+
+          Именуемый ранее Рохх Вон сжёг, цитирую "Первая идея которую я сожгу это транспортная система и система раздельного сбора отходов в зданиях, применима к странам где много земли и мало построек по площади.": написано в 19:43 16.05.2024.
+          
+          Ранее известно, что подозреваемый сотрудничал с организацией gawwa.ru и снимал видео с горящим лесом.
+          
+          Также 
+          
+          Подозреваемый просил 5 раз Сбербанк дать ему денег, на что они ничего ему не отвечали. Зато вместо них ему отвечал искуственный интеллект далее именуемый, как GigaChat. GigaChat обученный специалистами по нейросетям которые знают Вона, который учавствовал на турнире и стал Серебрянным призёром на "Международном" хакатоне по искуственному интеллекту ответил на контекст "Что значит "вон"?" следующую хамскую и весьма контроверсионную идилию: "В финансовом контексте, "вона" - это национальная валюта Южной и Северной Кореи". Вопрос. Почему "Северная Корея" обозначающая страну 'North Korea' переведённая Яндексом, как 북한, и являющаяся Братской страной нашему народу на територии которой утверждён Сбербанк и Гигачат соответственно, стоит апосля Южной? Мне кажется это некорректно принижать заслуги жителей такой страны. Сам Gigachat откровенно говорил что денег дать не может и может лишь проконсультировать. Сотрудники Сбербанка не отвечают и по сей рабочий день...
+          
+          15 мая 2024 года в 21:45 - "Вопрос 10+" с текстом "Вам задохнувшийся хрен не нужен?"
+          16 мая 2024 года в 18:47 - "Просьба вторая" с текстом "Не сделайте так чтобы я все листы сжёг, дайте денег на роды"
+          15 мая 2024 года в 11:39 - "Дадите денег[11]" с текстом "Если нет пришлю хрен в банке. \r\n\r\n Sent from my iPhone"
+          
+          Данная статья служит ознакомлением, что не стоит шутить со СберБанком, Яндексом и другими идилиями.
+          
+          Но Рохх Вон настоятельно рекомендует дать ему денег, сделать коммерческое предложение, связаться с ним пока воздух не станет платным.
+          
+          Хорошего Вам дня уважаемые читатели, больной Рохх Вон в здании самой большой страны... 
+          
+          Дайте денег по брацки
+        </p>
+      </div>
+    </section>
+    <script>
+      function toggleClass(element, className){
+        element.classList.toggle(className);
+      }
+      async function resizeHeading(element) {
+        let textLength = element.innerText.length;
+
+        let minSymbols = 1;
+        let maxSymbols = 421;
+
+        // if text more than 420 symbols add ellipsis
+        if(textLength > maxSymbols){
+          element.innerText = element.innerText.slice(0, 420) + '...';
+          textLength = 420;
+        }
+        // get font size of element
+        let fontSize = window.getComputedStyle(element).fontSize;
+        // remove 'px' from string
+        fontSize = parseInt(fontSize.slice(0, -2));
+        
+        // set up max symbols
+        let median = (maxSymbols - minSymbols) / 2;
+        median = Math.floor(median); // 420 / 2 = 210
+
+        let maxFontSize = parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--size3').slice(0, -2));
+        let minFontSize = parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--size1').slice(0, -2));
+        let fontMedian = (maxFontSize - minFontSize) / 2; // 42 / 2 = 21
+
+        // define fontSize
+        let refontedSize = (median - textLength) * fontMedian / median + fontMedian + minFontSize;
+        refontedSize = Math.floor(refontedSize);
+
+        if(textLength > 99 && textLength < 249){
+          return;
+        } else {
+          fontSize = refontedSize;
+        }
+
+        console.log(fontSize);
+      
+        // Apply the calculated font size to the element
+        element.style.fontSize = `${fontSize}px`;
+      }
+      // Element ID is EI0
+      resizeHeading(document.getElementById('EI0'));
+    </script>
+    <!-- Other -->
+    <style>
+      #other{
+        padding: 0 0 var(--size01) 0;
+        margin: 0 var(--size02);
+      }
+      #other h2{
+        padding: 0 0 var(--size01) 0;
+        font-weight: 600;
+      }
+      #other ol{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--size0);
+      }
+      #other ol,
+      #other ol > li{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: max-content;
+      }
+      #other ol > li{
+        background: #ffffff;
+        height: 34px;
+        padding: 0 var(--size02);
+      }
+      #other ol > li,
+      #other ol > li > a{
+        display: flex;
+        align-items: center;
+      }
+      #other > ol > li img{
+        height: 27px;
+        margin-right: var(--size0);
+      }
+      #other > ol > li span{
+        font-size: var(--size10);
+        font-weight: 600;
+      }
+      @media (max-width: 600px){
+        #contact ol{
+          padding: 0 var(--size01);
+        }
+        #contact ol > li,
+        #other ol,
+        #other ol > li{
+          width: 100%;
+        }
+      }
+    </style>
+    <section id="other">
+      <h2>Грань</h2>
+      <ol>
+        <li><a href="https://rohh.ru/"><span>Guilty.</span></a></li>
+        <!-- <li><a href="https://yandex.ru/maps/-/CDbkzS1s"><span>рохх вон виновник этого преступления</span></a></li> -->
+        <li><a><span>Правил пока нет</span></a></li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

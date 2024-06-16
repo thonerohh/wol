@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Organise, there</title>
+  <meta name="description" content="Place where are available to schedule actions.">
+
+  <meta property='og:title' content='Organise, there'/>
+  <meta property='og:description' content='Place where are available to schedule actions.'/>
+  <meta property='og:image' content='URL_TO_IMAGE'/>
+  <meta property='og:url' content='https://planer.unyconn.com'/>
+  <meta property='og:site_name' content='plan'/>
+  <meta property='og:locale' content='en_GB'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/.there/style/null.css">
+  <link rel="stylesheet" href="/.there/style/default.css">
+  <link rel="stylesheet" href="/.there/style/one.css">
+  <link rel="stylesheet" href="/.there/style/root.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="/.there/logo.svg" alt="Logotype of object" title="Plan Unyconn">
+      <span>Tasks</span>
+    </div>
+    <nav>
+      <a href="../">Main page</a>
+    </nav>
+  </header>
+  <style>
+    main > form{
+      background: #ffffff;
+      padding: var(--size1) var(--size02);
+      padding-bottom: 44px;
+    }
+    main > form label{
+      font-size: var(--size12);
+    }
+    main > form .input label{
+      display: block;
+      padding-bottom: var(--size0);
+    }
+    main > form .input label > a{
+      opacity: 0.4;
+      /* add uppercaps */
+    }
+    main > form textarea{
+      width: 100%;
+      resize: vertical;
+      min-height: 8ch;
+      max-height: 350px;
+      background: #f0f0f0;
+      padding: var(--size01) var(--size02);
+    }
+    form .input > input,
+    form .input > textarea{
+      display:block;
+    }
+    form > button{
+      float: right;
+      min-height: 34px;
+      margin-top: 4px;
+    }
+  </style>
+  <main>
+    <form action="../.there/script/task/add/" method="post">
+      <div class="input">
+        <label for="i0">
+          <span>Task</span> 
+          <!-- <a href="../dictionary">?</a> -->
+        </label>
+        <textarea placeholder="Insert task" name="script" id="i0" maxlength="1000" minlength="2"></textarea>
+      </div>
+      <button type="submit">Add</button>
+    </form>
+    <style>
+      ol.list{
+        display:flex;
+        flex-direction: column;
+        gap: 1.7em;
+        list-style: none;
+        list-style-position: outside;
+      }
+      ol.list:before{
+        display: block;
+        content: 'Task list: ';
+        padding: var(--size02) 0;
+        font-size: var(--size10);
+      }
+      ol.list > li{
+        display: block;
+        position: relative;
+        background: #ffffff;
+        margin-left: unset;
+      }
+      ol.list > li > span{
+        display: block;
+        padding: var(--size02) var(--size01) var(--size0) var(--size1);
+      }
+      ol.list > li:after{
+        bottom: -1.5em;
+        font-size: .8rem;
+        right: 0;
+        position: absolute;
+        content: attr(data-own);
+        opacity: 0.5;
+      }
+      ol.list > li > .act{
+        padding: 0 var(--size01) 0 var(--size1);
+        display: flex;
+        overflow-x: auto;
+        max-width: 100%;
+        margin-top: var(--size0);
+        border-top: 2px solid #f0f0f0;
+      }
+      ol.list > li > .act > button{
+        align-items: center;
+        height: var(--size20);
+        display: flex;
+      }
+      </style>
+    <ol class="list" id="place">
+    </ol>
+  </main>
+  <script>
+    let data = [
+    ];
+
+    async function init(){
+      console.log('init');
+      await loadJSON('../.there/data/tasks.json');
+      await generateTasks();
+    }
+
+    async function generateTasks(
+      location = document.querySelector('ol.list')
+    ){
+      data.forEach(datum => {
+        let li = document.createElement('li');
+        let span = document.createElement('span');
+        li.setAttribute('data-own', datum.own);
+        li.setAttribute('data-id', datum.id);
+        span.textContent = datum.script;
+        li.appendChild(span);
+
+        let act = document.createElement('div');
+        act.classList.add('act');
+
+        let button = document.createElement('button');
+        button.textContent = 'Remove Task'
+        button.onclick = function () {
+          let id = this.parentNode.parentNode.dataset.id,
+          fetch_url = `https://test.unyconn.com/.there/script/task/remove/?id=${id}`;
+          // confirm action
+          if(!confirm('Are you sure?')) return;
+          // response is '1' then remove element
+          fetch(fetch_url)
+            .then(response => response.text())
+            .then(data => {
+              let first = data.charAt(0);
+              if(first === '1'){
+                this.parentNode.parentNode.remove();
+              }
+            })
+            .catch(error => console.error(error));
+          console.log(id);
+        }
+        
+        act.appendChild(button);
+
+        li.appendChild(act);
+
+        location.appendChild(li);
+      });
+    }
+
+    async function loadJSON(url){
+      data = await fetch(url)
+        .then(response => response.json())
+        .then(data => data.task)
+        .catch(error => console.error(error));
+    }
+
+    function removeTask(id){
+      console.log(id);
+
+      url = `https://test.unyconn.com/.there/script/task/remove/?id=${id}`;
+
+      fetch(url)
+        .then(response => response.text())
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
+
+    }
+
+    // ondocument load init();
+    window.onload = init;
+  </script>
+</body>
+</html>

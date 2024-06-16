@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Accept, there</title>
+  <meta name="description" content="Protection page to make serious administrative actions">
+
+  <meta property='og:title' content='Accept, there'/>
+  <meta property='og:description' content='Protection page to make serious administrative actions'/>
+  <meta property='og:image' content='https://planer.unyconn.com/.there/image/logo.png'/>
+  <meta property='og:url' content='https://planer.unyconn.com'/>
+  <meta property='og:site_name' content='Planer'/>
+  <meta property='og:locale' content='en_GB'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/.there/style/null.css">
+  <link rel="stylesheet" href="/.there/style/one.css">
+  <link rel="stylesheet" href="/.there/style/root.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="https://planer.unyconn.com/.there/logo.svg" alt="Logotype of object" title="Plan Unyconn">
+      <span>Planer</span>
+    </div>
+    <nav>
+      <a href="../">Main page</a>
+      <a href="../add">Task page</a>
+    </nav>
+  </header>
+  <style>
+    header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+    }
+    body{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    body > div{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #000000;
+      color: #ffffff;
+      padding: var(--size02) var(--size1) 0 var(--size1);
+    }
+    body > div > h1{
+      grid-column: 1 / -1;
+    }
+    body > div > a{
+      text-align: center;
+      padding: var(--size02);
+    }
+  </style>
+  <div>
+    <h1>Do You approve action?</h1>
+    <a href="">Yes</a>
+    <a href="">No</a>
+  </div>
+</body>
+</html>

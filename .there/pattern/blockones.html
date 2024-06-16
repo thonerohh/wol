@@ -1,0 +1,131 @@
+<style>
+  .blockone{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+  }
+  .blockone > .gallery{
+  }
+  .blockone > .gallery > img{
+    scroll-snap-align: start;
+  }
+  .blockone > .context{
+    position: relative;
+    min-width: fit-content;
+    padding: 44px 24px 24px 12px;
+    background: #0a0a0a;
+    font-size: 24px;
+    font-family: sans-serif;
+    line-height: 1;
+  }
+  .blockone > .context > a{
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+  }
+  .blockone > .context > button{
+    border: unset;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: 44px;
+    padding: 0;
+    padding-right: 12px;
+  }
+  .blockone > .context > a > img,
+  .blockone > .context > button > img{
+    height: 44px;
+    aspect-ratio: 1/1;
+    transform: rotate(270deg);
+    transition: .5s;
+    filter: invert(1);
+  }
+  .blockone > .context > button:hover{
+    opacity: unset;
+  }
+  .blockone > .context > button:hover > img{
+    transform: translate(-12px) rotate(270deg);
+  }
+  .blockone > .context > button > span{
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-height: 100vw ){
+    .blockone{
+      display: flex;
+      padding-left: 100px;
+    }
+    .blockone > .gallery{
+      height: 100vh;
+      aspect-ratio: 1/1;
+      display: block;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+    }
+    .blockone > .gallery > img{
+      height: 100vh;
+      width: 100%;
+      object-fit: contain;
+    }
+    .blockone > .context{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 1400px ){
+    .blockone{
+      padding-left: 75px;
+    }
+  }
+  @media screen and (max-width: 1200px ){
+    .blockone{
+      padding-left: 50px;
+    }
+  }
+  @media screen and (max-width: 1000px ){
+    .blockone{
+      padding-left: 25px;
+    }
+  }
+  @media screen and (max-width: 100vh){
+    .blockone{
+      padding-left: unset;
+    }
+    .blockone > .gallery{
+      /* aspect-ratio: 1/1; */
+      width: 100vw;
+      display: flex;
+      scroll-snap-type: x mandatory;
+      overflow-x: auto;
+    }
+    .blockone > .gallery > img{
+      /* object-fit: contain; */
+      width: 100vw;
+      align-self: flex-end;
+    }
+    .blockone > .context{
+      padding-top: 64px;
+      height: 100%;
+    }
+    .blockone > .context > button{
+      height: 54px;
+      top: 8px;
+    }
+  }
+</style>
+<div class="blockone">
+  <div class="gallery">
+  </div>
+  <div class="context">
+    <button onclick="window.location.href = '.'"><img src="/.there/image/open.svg" alt=""><span>Обратно</span></button>
+    <h1></h1>
+    <a href="https://yandex.ru/maps/-/CDbYAW9V"><span>Приезжайте Стремянная 12</span><img src="/.there/image/link.svg" alt=""></a>
+  </div>
+</div>

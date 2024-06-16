@@ -1,0 +1,260 @@
+header{ 
+  width: 100%;
+  border-bottom: 2px solid #f0f0f0;
+}
+header > div{
+  width: var(--width);
+  margin: 0 auto;
+  padding-bottom: 4px;
+}
+header > div > .brand{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 0 6px 0;
+}
+header > div > .brand > span > b{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 12px 0 0;
+  letter-spacing: -1px;
+  line-height: 0.4;
+}
+header > div > .brand > img{
+  height: 44px;
+  width: 44px;
+}
+header > div > nav::-webkit-scrollbar{
+  height: 4px;
+}
+header > div > nav::-webkit-scrollbar-track{
+  background: #f0f0f0;
+}
+header > div > nav::-webkit-scrollbar-thumb{
+  background: #888888;
+  border-radius: 2px;
+}
+header > div > nav{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+  justify-self: flex-end;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+header > div > nav > a > span{
+  color: #00aa00;
+  font-size: 14px;
+  padding: 0 2px;
+  transform: translate(0, -8px);
+}
+header > div > nav > a{
+  display: flex;
+  align-items: center;
+  height: 44px;
+  border-radius: 21px;
+  font-size: 18px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #000;
+  padding: 0 4px;
+}
+header > div > nav > a.target{
+  padding: 0 16px;
+  background: #000000;
+  color: #ffffff;
+}
+main{
+  width: var(--width);
+  margin: 0 auto;
+}
+#about > .images{
+  scroll-snap-type: x mandatory;
+}
+#about > .images > img{
+  height: 100%;
+  object-fit: contain;
+  scroll-snap-align: start;
+}
+@media (max-width:100vh){
+  #about > .images{
+    height: 100vw;
+    display: flex;
+    overflow-x: auto;
+  }
+  #about > .images > img{
+    width: 100vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+@media (max-height: 100vw){
+  #about > .images{
+    height: 401px;
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding: 12px 0;
+  }
+  #about > .images > img{
+    border-radius: 12px;
+  }
+  header > div{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0 2px;
+  }
+}
+main{
+  min-height: 100vh;
+}
+
+/* other */
+#other{
+  margin: 44px 0 24px 0;
+}
+#other > h2{
+  padding: 0 0 8px 0;
+}
+#other > span{
+  font-size: 18px;
+}
+#other > div{
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+#other > div a{
+  padding: 12px 24px;
+  background: #f0f0f0;
+}
+@media (max-width: 100vh){
+  #other{
+    padding: 0 14px 0 15px;
+  }
+}
+
+
+/* contact */
+#contact{
+  margin-top: 44px;
+}
+#contact > h2{
+  padding: 0 0 8px 0;
+}
+#contact > span{
+  font-size: 18px;
+}
+#contact > .g{
+  margin: 21px 0;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 24px;
+}
+#contact > .g > .g1 > a{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#contact > .g > .g1 > a > img{
+  width: 44px;
+  height: 44px;
+}
+#contact > .g > form{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 12px 16px;
+}
+#contact > .g > form h3{
+  grid-column: 1 / -1;
+  font-size: 24px;
+}
+#contact > .g > form textarea,
+#contact > .g > form input:not([type="file"]){
+  background: #f0f0f0;
+  padding: 12px;
+}
+#contact > .g > form textarea{
+  min-height: 100px;
+  height: 150px;
+  max-height: 300px;
+  resize: vertical;
+}
+#contact > .g > form button{
+  background: #f0f0f0;
+  grid-column: 1 / -1;
+  align-self: flex-end;
+  justify-self: flex-end;
+  width: max-content;
+  padding: 5px 12px 7px 13px;
+}
+#contact > .g > form > span{
+  grid-column: 1 / -1;
+  opacity: 0.5;
+}
+#contact > .g > form h3 > span{
+  background: #0a0;
+  color: #fff;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 15px;
+}
+@media (max-width: 100vh){
+  #contact{
+    padding: 0 14px 0 15px;
+  }
+  #contact > .g,
+  #contact > .g > form{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* about */
+#about > ul:last-of-type > li{
+  display: flex;
+  align-items:center;
+  padding-left: 0;
+  padding-top: 8px;
+  margin-left: 0;
+  font-size: 18px;
+}
+#about > ul:last-of-type > li > img{
+  width: 44px;
+  height: 44px;
+  margin: 0 8px 0 0;
+}
+#about h1{
+  font-size: 44px;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  padding: 24px 0 8px 0;
+}
+#about h2{
+  font-size: 24px;
+  padding: 24px 0 8px 0;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  opacity: 0.65;
+}
+#about p{
+  font-size: 18px;
+  padding: 12px 0;
+}
+#about h3{
+  font-size: 24px;
+  padding: 12px 0 8px 0;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  opacity: 0.65;
+}
+@media (max-width: 100vh){
+  
+  #about > *:not(.images){
+    padding-left: 14px;
+    padding-right: 15px;
+  }
+}

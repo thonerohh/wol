@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Administrate, there</title>
+  <meta name="description" content="Place where are available to maintain account and memory">
+
+  <meta property='og:title' content='Administrate, there'/>
+  <meta property='og:description' content='Place where are available to maintain account and memory'/>
+  <meta property='og:image' content='URL_TO_IMAGE'/>
+  <meta property='og:url' content='https://planer.unyconn.com'/>
+  <meta property='og:site_name' content='plan'/>
+  <meta property='og:locale' content='en_GB'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/.there/style/null.css">
+  <link rel="stylesheet" href="/.there/style/default.css">
+  <link rel="stylesheet" href="/.there/style/one.css">
+  <link rel="stylesheet" href="/.there/style/root.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="/.there/logo.svg" alt="Logotype of object" title="Plan Unyconn">
+      <span>Tasks</span>
+    </div>
+    <nav>
+      <a href="../">Main page</a>
+      <a href="../add">Task page</a>
+      <a href="./add">MyTask page</a>
+    </nav>
+  </header>
+  <style>
+    main > div:first-of-type > .see{
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+    main > div:first-of-type > .see img{
+      max-height: 400px;
+      scroll-snap-align: start;
+    }
+    main > div:first-of-type > ol{
+      margin: var(--size02) 0;
+    }
+    main > div:first-of-type > ol textarea{
+      height: var(--size2);
+      overflow: hidden;
+    }
+    main > div:first-of-type > ol input,
+    main > div:first-of-type > ol textarea{
+      padding: var(--size0) 0;
+      /* background: #ffffff; */
+      display: flex;
+      align-items: center;
+      width: 100%;
+      resize: none;
+    }
+    main > div:first-of-type ol{
+      list-style: none;
+      
+    }
+    main > div:first-of-type > ol > li:first-of-type{
+      padding-top: var(--size0);
+    }
+    main > div:first-of-type > ol > li label{
+      font-size: var(--size1);
+    }
+    main > div:first-of-type > ol > li{
+      margin: unset;
+      font-size: var(--size11);
+    }
+    main > div:first-of-type a:any-link{
+      color: #11e;
+    }
+    main > div:first-of-type a:visited{
+      color: #117;
+    }
+    main > .user > .act{
+      margin-bottom: var(--size02);
+      gap: var(--size02);
+      display: flex;
+    }
+    main > .user > .act > a{
+      display: flex;
+      background: #ffffff;
+      color: #000000;
+      height: var(--size20);
+      align-items: center;
+      padding: 0 var(--size1);
+    }
+  </style>
+  <main>
+    <div class="user">
+      <!-- <div class="act account">
+        <a href="">Remove account</a>
+        <a href="">Edit account</a>
+        <a href="">Instructions</a>
+      </div> -->
+    </div>
+  </main>
+  <script>
+  async function generateUser(data) {
+    // convert data to array
+    data = Object.entries(data);
+
+    console.log(data);
+
+    let mainUser = document.querySelector('main > .user');
+
+    // if data contains key 'images' add div.see and img
+    if (data.images) {
+      let see = document.createElement('div');
+      see.classList.add('see');
+      mainUser.appendChild(see);
+
+      data.images.forEach(image => {
+        let img = document.createElement('img');
+        img.src = image;
+        see.appendChild(img);
+      });
+    }
+
+    let ol = document.createElement('ol');
+
+    data.forEach(datum => {
+      let li = document.createElement('li');
+      let label = document.createElement('label');
+      let textarea = document.createElement('textarea');
+
+      // add datum's key to label
+      label.textContent = datum[0];
+
+      // add datum's value to textarea
+      textarea.textContent = datum[1];
+
+      // add label and textarea to li
+      li.appendChild(label);
+      li.appendChild(textarea);
+
+      // append li to ol
+      ol.appendChild(li);
+    });
+
+    // add ol to the start of mainUser
+    mainUser.insertBefore(ol, mainUser.firstChild);
+  }
+
+
+    const username = document.cookie.split('; ').find(row => row.startsWith('id=')).split('=')[1];
+    let jsonData;
+
+    async function init(){
+      if (!username) {
+        window.location.href = '../';
+
+      } else {
+        const response = await fetch(`../../../.there/script/account/read/?id=${username}`);
+        jsonData = await response.json();
+        console.log(jsonData);
+  
+        await generateUser(jsonData);
+      }
+    }
+
+    window.onload = init;
+  </script>
+</body>
+</html>

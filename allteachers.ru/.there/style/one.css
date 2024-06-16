@@ -1,0 +1,91 @@
+/* default */
+body{
+  background: var(--background);
+}
+main, aside{
+  display: inline-block;
+  min-height: 100vh;
+}
+main{
+  margin-left: var(--indent);
+  width: var(--width);
+  z-index: 1;
+}
+aside{
+  position: sticky;
+  top: 0;
+  z-index: -1;
+  width: var(--side);
+}
+
+/* basic */
+ul.no > li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section{
+  margin: unset !important;
+  margin-bottom: 32px !important;
+}
+
+/* header */
+header{
+  display: flex;
+  padding: var(--size0) var(--size01);
+  height: var(--size2);
+}
+header .brand{
+  display: flex;
+  align-items: center;
+}
+header .brand img{
+  width: var(--size20);
+  height: var(--size20);
+}
+header .brand span{
+  margin-left: var(--size0);
+  font-size: var(--size11);
+  font-weight: 700;
+}
+nav{
+  display: flex;
+  padding-top: 4px;
+  align-items: center;
+  margin-left: auto;
+  font-size: var(--size1);
+  gap: var(--size01);
+  overflow-x: auto;
+  /* scroll snap */
+  scroll-snap-type: x mandatory;
+}
+nav a{
+  scroll-snap-align: start;
+  white-space: nowrap;
+}
+/* footer */
+footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: var(--size01);
+  min-height: var(--size2);
+  background: var(--foreground);
+  color: var(--background);
+}
+
+/* device compatibility */
+@media (max-width: 100vw) and (max-width: 1200px){
+  main{
+  }
+  aside{
+    min-height: 250px;
+  }
+  header{
+    height: max-content;
+    flex-direction: column;
+  }
+  header > nav{
+    margin-left: unset;
+  }
+}

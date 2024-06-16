@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="form">
+    <rect class="cls-1" width="44" height="44"/>
+  </g>
+  <g id="object">
+    <image width="20" height="28" transform="translate(12 8)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAACXBIWXMAAAsSAAALEgHS3X78AAAAmElEQVRIie2VzQ6AMAiDwfj+rzxPJma0rMwtXuxpUfsFxo9uuRp57szAXjDQ0I+AKgwyemAVFjjHJIBKBbolheg/vIXSrRTNzT5M+QfOA1E10+Z/AqU+IypNSiNnqFOMQJ7x7dumCg3+5W2TVXYUJfRu/wW83tj3YRYUwL4QZmZaY5euZdQ2qGjpzLM7VBdF8PUpVzdOCOgC8EwWM8J1PaUAAAAASUVORK5CYII="/>
+  </g>
+</svg>

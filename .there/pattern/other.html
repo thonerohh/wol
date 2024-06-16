@@ -1,0 +1,60 @@
+<!-- Other -->
+<style>
+  #other{
+    padding: 0 0 var(--size01) 0;
+    margin: 0 var(--size02);
+  }
+  #other h2{
+    padding: 0 0 var(--size01) 0;
+    font-weight: 600;
+  }
+  #other ol{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size0);
+  }
+  #other ol,
+  #other ol > li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: max-content;
+  }
+  #other ol > li{
+    background: #ffffff;
+    height: 34px;
+    padding: 0 var(--size02);
+  }
+  #other ol > li,
+  #other ol > li > a{
+    display: flex;
+    align-items: center;
+  }
+  #other > ol > li img{
+    height: 27px;
+    margin-right: var(--size0);
+  }
+  #other > ol > li span{
+    font-size: var(--size10);
+    font-weight: 600;
+  }
+  @media (max-width: 600px){
+    #contact ol{
+      padding: 0 var(--size01);
+    }
+    #contact ol > li,
+    #other ol,
+    #other ol > li{
+      width: 100%;
+    }
+  }
+</style>
+<section id="other">
+  <h2>Прочее</h2>
+  <ol>
+    <li><a href=""><span>CONTACT_DESCRIPTION</span></a></li>
+    <li><a href=""><span>CONTACT_DESCRIPTION</span></a></li>
+    <li><a href=""><span>CONTACT_DESCRIPTION</span></a></li>
+    <li><a href=""><span>CONTACT_DESCRIPTION</span></a></li>
+  </ol>
+</section>

@@ -1,0 +1,72 @@
+/* to set width properly, there are need to define it in root and media query */
+
+/* root default */
+:root{
+  --width: 1200px;
+  --bar: 54px;
+  
+  --foreground: #111;
+  --background: #f0f0f0;
+  --accent: #00FFBB;
+  --deep-accent: #006655;
+  --soft-accent: #55FFDD;
+
+  --size: 44px;
+  --radius: 21px;
+  --time: 0.44s;
+}
+/* root compiled */
+:root{
+  --half: calc(var(--width) / 2);
+  --third: calc(var(--width) / 3);
+  --quater: calc(var(--width) / 4);
+  --quint: calc(var(--width) / 5);
+  --sext: calc(var(--width) / 6);
+
+  --proportion: calc(var(--sext) + var(--half));
+  --back: calc(var(--width) - var(--proportion));
+}
+/* uneffective root */
+:root{
+  --size1: 8px;
+  --size2: 12px;
+  --size3: 16px;
+  --size4: 18px;
+  --size5: 24px;
+  --size6: 27px;
+  --size7: 34px;
+  --size8: 37px;
+  --size9: 44px;
+  --size10: 47px;
+  --size11: 54px;
+  --size12: 57px;
+  --size13: 64px;
+  --size14: 75px;
+  --size15: 100px;
+  --size16: 150px;
+}
+
+/* device compatibility */
+@media (max-width: 100vw) and (max-width: 1200px){
+  :root{
+    --width: 100vw;
+  }
+  :root{
+    --size1: 7px;
+    --size2: 11px;
+    --size3: 14px;
+    --size4: 16px;
+    --size5: 21px;
+    --size6: 25px;
+    --size7: 29px;
+    --size8: 32px;
+    --size9: 36px;
+    --size10: 40px;
+    --size11: 46px;
+    --size12: 49px;
+    --size13: 54px;
+    --size14: 55px;
+    --size15: 75px;
+    --size16: 115px;
+  }
+}

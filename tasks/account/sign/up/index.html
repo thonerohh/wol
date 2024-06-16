@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sign up, there</title>
+  <meta name="description" content="Location to sign through web to plan account">
+
+  <meta property='og:title' content='Sign, there'/>
+  <meta property='og:description' content='Location to sign through web to plan account'/>
+  <meta property='og:image' content='URL_TO_IMAGE'/>
+  <meta property='og:url' content='https://planer.unyconn.com'/>
+  <meta property='og:site_name' content='plan'/>
+  <meta property='og:locale' content='en_GB'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/.there/style/null.css">
+  <link rel="stylesheet" href="/.there/style/default.css">
+  <link rel="stylesheet" href="/.there/style/one.css">
+  <link rel="stylesheet" href="/.there/style/root.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="/.there/logo.svg" alt="Logotype of object" title="Plan Unyconn">
+      <span>Tasks</span>
+    </div>
+    <nav>
+      <a href="../">Sign page</a>
+      <a href="../../../">Main page</a>
+      <a href="../../../add">Task page</a>
+    </nav>
+  </header>
+  <style>
+    main > form{
+      background: #ffffff;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    main > form > span{
+      font-size: var(--size11);
+      padding: var(--size0) var(--size02) 0 var(--size02);
+    }
+    main > form > .input{
+      padding: 0 var(--size02);
+      width: 100%;
+    }
+    main > form > .input > input,
+    main > form > .input > label{
+      display: block;
+    }
+    main > form > .input > label{
+      padding: var(--size02) 0 var(--size0) 0;
+    }
+    main > form > .input > textarea,
+    main > form > .input > input{
+      background: #f0f0f0;
+      height: var(--size2);
+      padding: 0 var(--size0);
+      width: 100%;
+    }
+    main > form > .input > textarea{
+      padding: var(--size0);
+      max-height: 350px;
+      height: var(--size32);
+      min-height: var(--size2);
+      resize: vertical;
+    }
+    main > form > button{
+      width: max-content;
+      align-self: flex-end;
+      padding: 0 var(--size02);
+      display: flex;
+      height: var(--size20);
+      margin-top: var(--size02);
+      align-items: center;
+    }
+    main > form + a{
+      display: block;
+      width: max-content;
+      padding: var(--size0) var(--size02);
+      margin: 0 auto;
+    }
+  </style>
+  <main>
+    <form action="../../../.there/script/account/sign/up/" method="post">
+      <span>Enter Your account</span>
+      <div class="input">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="input">
+        <label for="login">Login</label>
+        <input type="text" id="login" name="login" required>
+      </div>
+      <div class="input">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input">
+        <label for="descript">Description</label>
+        <textarea name="descript" id="descript" maxlength="400" minlength="2" required></textarea>
+      </div>
+      <div class="input">
+        <label for="birthdate">Birth date</label>
+        <input type="date" name="birthdate" id="birthdate">
+      </div>
+      <button type="submit">Sign up</button>
+    </form>
+    <a href="../">Enter existing account</a>
+  </main>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* root default */
+:root{
+  --width: 1200px;
+  --indent: 200px;
+  --half-indent: calc((100vw - var(--width)) / 2);
+  --side: calc(100vw - (var(--width) + var(--indent) + 33px));
+  
+  --foreground: #000000;
+  --background: #f0f0f0;
+  --accent: #00FFCC;
+  --deep-accent: #004433;
+  --soft-accent: #88FFDD;
+
+  --size: 43px;
+  --radius: 20px;
+  --time: 0.4s;
+}
+
+/* root compiled */
+:root{
+  --half: calc(var(--width) / 2);
+  --third: calc(var(--width) / 3);
+  --quater: calc(var(--width) / 4);
+  --quint: calc(var(--width) / 5);
+  --sext: calc(var(--width) / 6);
+
+  --proportion: calc((var(--width) / 6) + (var(--width) / 2));
+  --reproportion: calc(var(--width) - ((var(--width) / 6) + (var(--width) / 2)));
+}
+
+/* size root */
+:root{
+  /* minimal size */
+  --size0: 8px;
+  --size01: 13px;
+  --size02: 15px;
+  
+  /* normal size */
+  --size1: 17px;
+  --size10: 19px;
+  --size11: 22px;
+  --size12: 27px;
+
+  /* heading size */
+  --size20: 33px;
+  --size21: 37px;
+  --size2: 43px;
+  --size22: 47px;
+
+  /* large size */
+  --size3: 50px;
+  --size31: 75px;
+  --size32: 100px;
+  --size33: 150px;
+}
+
+@media (max-width: 1800px){
+  :root{
+    --width: 1200px;
+    --indent: 150px;
+    --side: calc(100vw - (var(--width) + var(--indent) + 33px));
+  }
+}
+@media (max-width: 1600px){
+  :root{
+    --width: 1100px;
+    --indent: 100px;
+    --side: calc(100vw - (var(--width) + var(--indent) + 33px));
+  }
+}
+@media (max-width: 1400px){
+  :root{
+    --width: 1000px;
+    --indent: 50px;
+    --side: calc(100vw - (var(--width) + var(--indent) + 33px));
+  }
+}
+
+/* device compatibility */
+@media (max-width: 100vw) and (max-width: 1200px){
+  :root{
+    --width: 100vw;
+    --side: 100vw;
+    --indent: 0px;
+  }
+  :root{
+    /* minimal size */
+    --size0: 7px;
+    --size01: 12px;
+    --size02: 14px;
+    
+    /* normal size */
+    --size1: 17px;
+    --size10: 18px;
+    --size11: 22px;
+    --size12: 25px;
+  
+    /* heading size */
+    --size20: 28px;
+    --size21: 31px;
+    --size2: 34px;
+    --size22: 39px;
+  
+    /* large size */
+    --size3: 50px;
+    --size31: 64px;
+    --size32: 92px;
+    --size33: 128px;
+  }
+}

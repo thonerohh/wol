@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ACTION-WEBSITE_NAME</title>
+  <meta name="description" content="WEBSITE_DESCRIPTION">
+
+  <meta property='og:title' content='ACTION-WEBSITE_NAME'/>
+  <meta property='og:description' content='WEBSITE_DESCRIPTION'/>
+  <meta property='og:image' content='URL_TO_IMAGE'/>
+  <meta property='og:url' content='PAGE_URL'/>
+  <meta property='og:site_name' content='SITE_NAME'/>
+  <meta property='og:locale' content='en_GB'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:updated_time' content='2023-10-10T00:00:00+03:00'/>
+
+  <link rel="stylesheet" href="/.there/style/null.css">
+  <link rel="stylesheet" href="/.there/style/one.css">
+  <link rel="stylesheet" href="/.there/style/root.css">
+
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='icon' href='/favicon.svg' type='image/svg+xml'>
+  <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="/.there/logo.svg" alt="Logotype of object" title="WEBSITE_NAME">
+      <span>WEBSITE_NAME</span>
+    </div>
+    <nav>
+      <a href="#contact">WEBSITE_URL</a>
+      <a href="#contact">WEBSITE_URL</a>
+      <a href="#contact">WEBSITE_URL</a>
+      <a href="#contact">WEBSITE_URL</a>
+    </nav>
+  </header>
+  <style>
+    main{
+      min-height: unset;
+      float: left;
+      transition: 0.5s;
+    }
+    main > section{
+      /* background: #ffffff; */
+    }
+    main > section > h2{
+      font-size: var(--size20);
+      word-break: break-all;
+    }
+    main > section:nth-child(1){
+      padding-bottom: 9px;
+      background: #ffffff;
+    }
+    main > section:nth-child(1) > span,
+    main > section:nth-child(1) > h1,
+    main > section:nth-child(1) > p,
+    main > section:nth-child(1) > ul{
+      padding: 0 var(--size02);
+      word-break: break-word;
+      hyphens: manual;
+    }
+    main > section:nth-child(1) > .list{
+      height: 400px;
+      display: flex;
+      overflow-x: auto;
+      margin-bottom: 3px;
+      scroll-snap-type: x mandatory;
+    }
+    main > section:nth-child(1) > .list > img{
+      object-fit: cover;
+      scroll-snap-align: start;
+    }
+    main > section:nth-child(1) > span{
+      font-size: 17px;
+    }
+    main > section:nth-child(1) > h1{
+      padding-top: 8px;
+      font-size: 34px;
+    }
+    main > section:nth-child(1) > p{
+      font-size: 24px;
+      padding-top: 8px;
+      padding-bottom: 3px;
+      line-height: 1.1;
+    }
+    main > section:nth-child(1) > ul > li {
+      padding-top: 7px;
+      padding-bottom: 4px;
+      display: flex;
+      align-items: center;
+    }
+    main > section:nth-child(1) > ul > li > img{
+      height: 27px;
+      margin-right: 8px;
+    }
+    main > section:nth-child(1) > ul > li > span{
+      font-size: var(--size10);
+    }
+    @media (max-width: 600px){
+      main > section:nth-child(1) > .list > img{
+        aspect-ratio: 1/1 !important;
+      }
+    }
+  </style>
+  <main class="centered">
+    <!-- [0] section -->
+    <section>
+      <div class="list">
+        <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION" class="mobile">
+        <img src="/.there/image/image.svg" alt="Image of IMAGE_DESCRIPTION">
+        <img src="/.there/image/image.svg" alt="Image of IMAGE_DESCRIPTION">
+        <img src="/.there/image/image.svg" alt="Image of IMAGE_DESCRIPTION">
+        <img src="/.there/image/image.svg" alt="Image of IMAGE_DESCRIPTION">
+        <img src="/.there/image/image.svg" alt="Image of IMAGE_DESCRIPTION">
+      </div>
+      <span>Lorem ipsum dolor sit amet.</span>
+      <h1>WEBSITE_DESCRIPTION_SHORTAGE</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit dolor sum</p>
+      <ul class="no">
+        <li><img src="/.there/image/decorative-image.svg" alt="Icon of ICON_DESCRIPTION"> <span>Lorem ipsum dolor sit amet.</span></li>
+        <li><img src="/.there/image/decorative-image.svg" alt="Icon of ICON_DESCRIPTION"> <span>Lorem ipsum dolor sit amet.</span></li>
+        <li><img src="/.there/image/decorative-image.svg" alt="Icon of ICON_DESCRIPTION"> <span>Lorem ipsum dolor sit amet.</span></li>
+        <li><img src="/.there/image/decorative-image.svg" alt="Icon of ICON_DESCRIPTION"> <span>Lorem ipsum dolor sit amet.</span></li>
+      </ul>
+    </section>
+    <!-- Breadcrumbs -->
+    <style>
+      #breadcrumbs{
+        display: flex;
+        padding: var(--size02);
+        background: #ffffff;
+        margin-bottom: 32px;
+        overflow-x: auto;
+      }
+      #breadcrumbs > span{
+        padding: 0 var(--size0);
+      }
+      #breadcrumbs > a{
+        white-space: nowrap;
+        font-size: var(--size1);
+      }
+      #breadcrumbs > a:visited{
+        color: #442288;
+      }
+    </style>
+    <div id="breadcrumbs">
+      <a>Главная</a>
+      <span>/</span>
+      <a href="#contact">Контакты</a>
+      <span>/</span>
+      <a href="#object">Объект 1</a>
+    </div>
+    <!-- About -->
+    <style>
+      #about{
+        padding: var(--size02);
+        background: #ffffff;
+      }
+      #about > h2{
+        font-size: var(--size20);
+        padding-bottom: 9px;
+      }
+      #about > p{
+        font-size: var(--size10);
+        line-height: 1.2;
+      }
+    </style>
+    <section id="about">
+      <h2>Подробнее</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero cupiditate minus aspernatur rerum obcaecati magnam deserunt odio accusamus dignissimos ipsum enim iste repellat, delectus eos placeat culpa corporis? Atque aliquid quos unde sapiente sit earum molestias cum quibusdam perferendis. Amet voluptatum tempore dolores eum, eos unde perspiciatis non, asperiores reprehenderit adipisci voluptas odio quis doloremque aperiam earum quod deleniti obcaecati id a aliquam cum exercitationem. Assumenda fuga neque doloremque. Praesentium, repellendus dignissimos? Qui, quam doloribus rerum reiciendis voluptatibus, ut corrupti at iure similique officia tenetur atque vitae cumque enim eum dignissimos eligendi. Placeat tempore sapiente libero explicabo error nostrum rerum.</p>
+    </section>
+    <!-- Advantages -->
+    <style>
+      #advantages{
+        padding: var(--size02);
+        background: #ffffff;
+      }
+      #advantages > h2{
+        font-size: var(--size20);
+        padding-bottom: 9px;
+      }
+      .tile{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--size0);
+        padding: var(--size1) 0;
+      }
+      .tile > div > img{
+        height: 100px;
+        
+        object-fit: contain;
+      }
+      .tile > div > h3{
+        font-size: var(--size10);
+        word-break: break-all;
+      }
+      @media (max-width: 600px){
+        .tile > div > img{
+          width: 100%;
+        }
+        .tile{
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+    <section id="advantages">
+      <h2>Преимущества</h2>
+      <div class="tile">
+        <div>
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>DESCRIPTION_OF_ADVANTAGE</h3>
+        </div>
+        <div>
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>DESCRIPTION_OF_ADVANTAGE</h3>
+        </div>
+        <div>
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>DESCRIPTION_OF_ADVANTAGE</h3>
+        </div>
+        <div>
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>DESCRIPTION_OF_ADVANTAGE</h3>
+        </div>
+        <div>
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>DESCRIPTION_OF_ADVANTAGE</h3>
+        </div>
+      </div>
+    </section>
+    <!-- Orders -->
+    <style>
+      #orders{
+        padding: var(--size02);
+        background: #ffffff;
+      }
+      #orders > h2{
+        font-size: var(--size20);
+        padding-bottom: 9px;
+      }
+      #orders > ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: var(--size01);
+        overflow-y: auto;
+        max-height: 40vh;
+      }
+      #orders > ul > li{
+        position: relative;
+        counter-increment: item;
+        background: #f0f0f0;
+        list-style: none;
+        padding: var(--size0) var(--size02);
+        margin:unset;
+      }
+      #orders > ul > li:after{
+        /* display number */
+        content: counter(item);
+        position: absolute;
+        font-weight: 600;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: var(--size2);
+        width: var(--size2);
+      }
+      #orders > ul > li > img{
+        height: var(--size2);
+      }
+      #orders > ul > li > h3{
+        font-size: var(--size11);
+      }
+    </style>
+    <section id="orders">
+      <h2>Заказы</h2>
+      <ul>
+        <li>
+          <img src="/.there/image/decorative-image.svg" alt="Icon of IMAGE_DESCRIPTION">
+          <h3>Заказ с сайта</h3>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vitae!</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi nisi amet sint, est dignissimos beatae odit reprehenderit consequatur nam?</p>
+        </li>
+        <li>
+          <img src="/.there/image/decorative-image.svg" alt="Icon of IMAGE_DESCRIPTION">
+          <h3>Заказ с сайта</h3>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vitae!</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi nisi amet sint, est dignissimos beatae odit reprehenderit consequatur nam?</p>
+        </li>
+        <li>
+          <img src="/.there/image/decorative-image.svg" alt="Icon of IMAGE_DESCRIPTION">
+          <h3>Заказ с сайта</h3>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vitae!</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi nisi amet sint, est dignissimos beatae odit reprehenderit consequatur nam?</p>
+        </li>
+        <li>
+          <img src="/.there/image/decorative-image.svg" alt="Icon of IMAGE_DESCRIPTION">
+          <h3>Заказ с сайта</h3>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vitae!</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi nisi amet sint, est dignissimos beatae odit reprehenderit consequatur nam?</p>
+        </li>
+        <li>
+          <img src="/.there/image/decorative-image.svg" alt="Icon of IMAGE_DESCRIPTION">
+          <h3>Заказ с сайта</h3>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vitae!</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi nisi amet sint, est dignissimos beatae odit reprehenderit consequatur nam?</p>
+        </li>
+        <li>
+          <img src="/.there/image/decorative-image.svg" alt="Icon of IMAGE_DESCRIPTION">
+          <h3>Заказ с сайта</h3>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vitae!</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi nisi amet sint, est dignissimos beatae odit reprehenderit consequatur nam?</p>
+        </li>
+        <li>
+          <img src="/.there/image/decorative-image.svg" alt="Icon of IMAGE_DESCRIPTION">
+          <h3>Заказ с сайта</h3>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vitae!</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi nisi amet sint, est dignissimos beatae odit reprehenderit consequatur nam?</p>
+        </li>
+        <li>
+          <img src="/.there/image/decorative-image.svg" alt="Icon of IMAGE_DESCRIPTION">
+          <h3>Заказ с сайта</h3>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vitae!</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi nisi amet sint, est dignissimos beatae odit reprehenderit consequatur nam?</p>
+        </li>
+        <li>
+          <img src="/.there/image/decorative-image.svg" alt="Icon of IMAGE_DESCRIPTION">
+          <h3>Заказ с сайта</h3>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vitae!</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi nisi amet sint, est dignissimos beatae odit reprehenderit consequatur nam?</p>
+        </li>
+        <li>
+          <img src="/.there/image/decorative-image.svg" alt="Icon of IMAGE_DESCRIPTION">
+          <h3>Заказ с сайта</h3>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vitae!</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi nisi amet sint, est dignissimos beatae odit reprehenderit consequatur nam?</p>
+        </li>
+        <li>
+          <img src="/.there/image/decorative-image.svg" alt="Icon of IMAGE_DESCRIPTION">
+          <h3>Заказ с сайта</h3>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vitae!</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi nisi amet sint, est dignissimos beatae odit reprehenderit consequatur nam?</p>
+        </li>
+      </ul>
+    </section>
+    <!-- Services -->
+    <style>
+      #services{
+      }
+      #services > h2{
+        font-size: var(--size20);
+        padding: 0 var(--size02) var(--size1) var(--size02);
+      }
+      #services > div{
+        display: flex;
+        margin-bottom: var(--size11);
+        background: #ffffff;
+        gap: var(--size0);
+      }
+      #services > div > .gallery{
+        display: flex;
+        width: 400px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: var(--size0);
+      }
+      #services > div > .gallery > img{
+        width: 100%;
+        scroll-snap-align: start;
+      }
+      #services > div > ol{
+        position: relative;
+        padding-bottom: 44px;
+      }
+      #services > div > ol > li{
+        list-style: none;
+      }
+      #services > div > ol > li > h3{
+        font-size: var(--size11);
+        padding: var(--size02) 0;
+      }
+      #services > div > ol > li > ol{
+        padding-top: var(--size01);
+        
+      }
+      #services > div > ol > li:last-of-type{
+        position: absolute;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        bottom: 0;
+        left: 0;
+      }
+      #services > div > ol > li:last-of-type > ol{
+        padding-top: unset;
+        display: flex;
+        gap: var(--size01);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+      }
+      #services > div > ol > li:last-of-type > ol > li:first-of-type{
+        height: 34px;
+        padding: 0 var(--size01);
+        background: #f0f0f0;
+      }
+      #services > div > ol > li:last-of-type > ol > li{
+        list-style: none;
+        scroll-snap-align: start;
+        display: flex;
+        align-items: center;
+        margin: 0;
+      }
+      #services > div > ol > li.script{
+        background: #f0f0f0;
+        padding: var(--size0) var(--size01);
+        margin-top: var(--size01);
+        margin-right: var(--size01);
+        height: 150px;
+      }
+      @media (max-width: 600px){
+        #services > div{
+          display: block;
+        }
+        #services > div > .gallery{
+          display: flex;
+          width: 100%;
+          gap: var(--size0);
+          padding: var(--size02) 0;
+        }
+        #services > div > .gallery > img{
+          /* background: #cccccc; */
+        }
+        #services > div > ol{
+          padding: 0 var(--size02) 54px var(--size02);
+        }
+        #services > div > ol > li{
+          margin: 0;
+        }
+        #services > div > ol > li.script{
+          margin-right: unset;
+        }
+        #services > div > ol > li h3{
+          font-size: var(--size11);
+          word-break: break-all;
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+        #services > div > ol > li a{
+          font-size: var(--size10);
+        }
+        #services > div > ol > li:last-of-type{
+          left: var(--size01);
+        }
+        #services > div > ol > li:last-of-type > ol{
+          max-width: calc(100vw - (var(--size01) * 2));
+        }
+      }
+
+    </style>
+    <section id="services">
+      <h2>Услуги</h2>
+      <div>
+        <div class="gallery">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+        </div>
+        <ol>
+          <li><h3>NAME_OF_PRODUCT - PRICE_OF_PRODUCT - PRODUCT_MODEL</h3></li>
+          <li><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum, id debitis officiis exercitationem commodi at illum! Rem ducimus voluptates commodi.</p></li>
+          <li class="script">Акция -20%</li>
+          <li>
+            <ol>
+              <li><a href="#contact">SERVICE_ACTION</a></li>
+              <li><a href="#contact">SERVICE_ACTION</a></li>
+              <li><a href="#contact">SERVICE_ACTION</a></li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <div class="gallery">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+        </div>
+        <ol>
+          <li><h3>NAME_OF_PRODUCT - PRICE_OF_PRODUCT - PRODUCT_MODEL</h3></li>
+          <li><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum, id debitis officiis exercitationem commodi at illum! Rem ducimus voluptates commodi.</p></li>
+          <li>
+            <ol>
+              <li>PRODUCT_CHARACTERISTIC</li>
+              <li>PRODUCT_CHARACTERISTIC</li>
+              <li>PRODUCT_CHARACTERISTIC</li>
+              <li>PRODUCT_CHARACTERISTIC</li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li><a href="#contact">SERVICE_ACTION</a></li>
+              <li><a href="#contact">SERVICE_ACTION</a></li>
+              <li><a href="#contact">SERVICE_ACTION</a></li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <ol>
+          <li><h3>NAME_OF_PRODUCT - PRICE_OF_PRODUCT - PRODUCT_MODEL</h3></li>
+          <li><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum, id debitis officiis exercitationem commodi at illum! Rem ducimus voluptates commodi.</p></li>
+          <li>
+            <ol>
+              <li>PRODUCT_CHARACTERISTIC</li>
+              <li>PRODUCT_CHARACTERISTIC</li>
+              <li>PRODUCT_CHARACTERISTIC</li>
+              <li>PRODUCT_CHARACTERISTIC</li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li><a href="#contact">SERVICE_ACTION</a></li>
+              <li><a href="#contact">SERVICE_ACTION</a></li>
+              <li><a href="#contact">SERVICE_ACTION</a></li>
+            </ol>
+          </li>
+        </ol>
+        <div class="gallery">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+        </div>
+      </div>
+    </section>
+    <!-- Reviews -->
+    <style>
+      #reviews{
+        padding: var(--size0) var(--size1);
+      }
+      #reviews > h2{
+        padding: var(--size02);
+      }
+      #reviews > div{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--size02);
+      }
+      #reviews > div > .review{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--size0) var(--size01);
+
+        background: #ffffff;
+        padding: var(--size02);
+      }
+      #reviews > div > .review > img{
+        height: var(--size12);
+      }
+      #reviews > div > .review > h3{
+        display: inline-flex;
+        align-items: center;
+        height: var(--size12);
+      }
+    </style>
+    <section id="reviews">
+      <h2>Отзывы</h2>
+      <div>
+        <div class="review">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>Имя Фамилия 5 звёзд от 3/4/2024</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel distinctio illo quas, pariatur enim illum. Quidem impedit, repellendus quo modi nobis aut iste illo?</p>
+        </div>
+        <div class="review">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>Имя Фамилия 5 звёзд от 3/4/2024</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel distinctio illo quas, pariatur enim illum. Quidem impedit, repellendus quo modi nobis aut iste illo?</p>
+        </div>
+        <div class="review">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>Имя Фамилия 5 звёзд от 3/4/2024</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel distinctio illo quas, pariatur enim illum. Quidem impedit, repellendus quo modi nobis aut iste illo?</p>
+        </div>
+        <div class="review">
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>Имя Фамилия 5 звёзд от 3/4/2024</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel distinctio illo quas, pariatur enim illum. Quidem impedit, repellendus quo modi nobis aut iste illo?</p>
+        </div>
+      </div>
+    </section>
+    <!-- Target Action 1 -->
+    <style>
+      #TA1{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        background: #ffffff;
+        padding: var(--size02);
+      }
+      #TA1 > form > legend{
+        font-size: var(--size12);
+        font-weight: 600;
+        padding-bottom: var(--size01);
+      }
+      #TA1 > form > input{
+        background: #f0f0f0;
+        padding: 0 var(--size01);
+        height: 44px;
+        min-width: 350px;
+        display: block;
+      }
+      #TA1 > form > button{
+        background: #000000;
+        color: #ffffff;
+        padding: 0 var(--size01);
+        height: 34px;
+        display: block;
+        margin-top: var(--size01);
+      }
+      #TA1 > form > p{
+        font-size: var(--size10);
+        padding-top: var(--size01);
+      }
+      #TA1 > img{
+        aspect-ratio: 3/2;
+      }
+      #TA1 ol > li > a,
+      #TA1 ul > li > a,
+      #TA1 p > a{
+        color: #442288;
+      }
+      @media (max-width: 600px){
+        #TA1{
+          grid-template-columns: 1fr;
+        }
+        #TA1 > img{
+          width: 100%;
+        }
+        #TA1 > form > input{
+          width: 100%;
+          min-width: unset;
+        }
+      }
+    </style>
+    <section id="TA1">
+      <form action="/.there/script/tool/send.js" method="post">
+        <legend>Lorem, ipsum.</legend>
+        <input type="tel" placeholder="+1 000 000 00 00" required>
+        <button type="submit">Заказать</button>
+        <ul>
+          <li>* Оставляя заявку я подтверждаю то, что я знаком с ценами на предоставляемые услуги.</li>
+          <li>* Подтверждаю что знаком с <a href="/rules">правилами сайта</a></li>
+        </ul>
+      </form>
+      <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+    </section>
+    <!-- Media -->
+    <style>
+      #media{
+
+      }
+      #media > img{
+        aspect-ratio: 16/9;
+        background: #dddddd;
+      }
+      #media > p{
+        font-size: var(--size10);
+        padding: var(--size0) var(--size02) var(--size1) var(--size02);
+      }
+      #media > div{
+        background: #ffffff;
+        padding: var(--size0) var(--size10) var(--size11) var(--size11);
+      }
+      #media > div > h2{
+        font-size: var(--size10);
+        word-break: break-all;
+        padding-top: 8px;
+        padding-bottom: 12px;
+        line-height: 1.4;
+      }
+      #media > div > p{
+        font-size: var(--size1);
+        line-height: 1.5;
+      }
+    </style>
+    <section id="media" onclick="toggleClass(this.parentNode, 'centered')">
+      <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ducimus vitae laudantium deserunt, quod aperiam totam exercitationem asperiores. Eum, provident debitis.</p>
+      <video src="https://placehold.co/1920x1080.mp4">
+        <source src="https://placehold.co/1920x1080.mp4" type="video/mp4">
+      </video>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ducimus vitae laudantium deserunt, quod aperiam totam exercitationem asperiores. Eum, provident debitis.</p>
+      <div>
+        <h2 id="EI0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint quae cum beatae quas, unde distinctio illum consequuntur fugit culpa laudantium amet hic explicabo ullam voluptate. Officiis, reiciendis tenetur libero asperiores ea harum itaque architecto excepturi facere ipsum ratione fuga! Rem id, officiis quo quod ab hic numquam architecto odit quibusdam voluptatem esse dolorum distinctio cum tempora consequatur, repellendus eius eum saepe. At quaerat necessitatibus accusantium cupiditate aspernatur quam ab ut ad ipsam architecto facilis doloribus voluptatum optio sed neque ea, deleniti cumque accusamus, quod molestias rem. Voluptatum, quaerat sed ex ea est voluptates ratione quisquam delectus sapiente quod explicabo consectetur vero quibusdam eveniet?</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex cum blanditiis exercitationem facilis optio, facere repellendus quis quo ipsam sit officiis at saepe magnam iure esse et possimus mollitia deleniti vitae reprehenderit, dicta velit quam. Enim fugiat non quo numquam assumenda animi iusto facere rem eaque consequatur, hic, nihil saepe similique vitae quisquam provident? Obcaecati quasi ullam et hic eos distinctio beatae consectetur, amet iusto accusantium quae ab alias nisi sapiente reprehenderit ea aperiam, ipsam harum molestiae, sunt dolorem nulla ad animi sequi. Laboriosam, delectus. Id laborum voluptatem quaerat, adipisci at recusandae dolore distinctio suscipit delectus dolores placeat laudantium nihil optio aliquid veritatis soluta aliquam facere, nobis dignissimos perferendis. Corrupti, asperiores eum! Saepe debitis, odio soluta veritatis perferendis quis nisi sequi aperiam! Tempora sit reprehenderit voluptate molestias ratione velit! Quibusdam, quaerat vitae inventore quidem asperiores eos! Fugiat assumenda harum fuga labore. Praesentium eveniet ad assumenda temporibus similique nisi rem accusantium aut, fugit nobis. Laborum fugiat sint minus veniam dolores ad, mollitia exercitationem quod earum harum dolorem reprehenderit, nesciunt voluptates aperiam ratione hic! Error odio distinctio, eligendi velit molestiae similique cum at adipisci suscipit necessitatibus dolores, quidem enim sed exercitationem quaerat, voluptatibus architecto. Modi vero illo minus minima ipsa eius inventore quibusdam sequi adipisci obcaecati nesciunt voluptate itaque laborum libero, deleniti facilis accusamus! Aspernatur, quia voluptatum! Blanditiis culpa qui sapiente incidunt atque aperiam praesentium, nemo nesciunt, natus, ex iure. Dolorum consequuntur earum quia, odit cum soluta non, dolore numquam veritatis vero laborum libero perspiciatis beatae esse dolorem, in sunt ut? Adipisci tempora error perferendis earum eos omnis quae debitis sint quos non accusamus, ea maxime exercitationem placeat quia nulla recusandae similique vitae laborum quidem atque porro suscipit! Deleniti nulla animi laborum nam neque cum dolore iste, eum, cumque sunt nesciunt, vitae temporibus! Corrupti debitis ratione sunt nostrum qui, esse hic sed sit natus laborum magni voluptates eveniet minus ea, laudantium assumenda tempora perspiciatis id, quia cupiditate temporibus? Nobis velit doloribus omnis nostrum? Quod natus quas iusto delectus earum consequuntur debitis numquam, accusantium, quia officiis voluptate neque ut? Optio minus, vero assumenda enim maxime accusamus at corporis ut atque veritatis. Aperiam suscipit rerum corporis praesentium incidunt, ipsum et doloribus nobis deleniti sunt natus illo corrupti perferendis quo harum exercitationem temporibus minus velit! Adipisci rem deleniti itaque ea animi distinctio culpa sunt natus aspernatur illo quos expedita, eaque voluptate harum veniam id tempore sapiente repellat tenetur provident, possimus nobis? Harum consequuntur tenetur laboriosam pariatur accusamus nulla necessitatibus repudiandae illum dicta, est cum consequatur non ipsa culpa sint dolores modi neque iure molestias, recusandae perspiciatis quibusdam rerum ut? Eaque distinctio provident aliquid beatae eligendi temporibus, tenetur commodi debitis non, doloremque odit nostrum vitae corrupti quo velit, animi voluptatem nisi ab. Eveniet qui eaque unde facere facilis eius, eum quos nostrum temporibus voluptas! Quasi impedit nobis delectus qui minima deserunt corporis accusamus dolore. Quis, odit! Voluptatem corporis quia sequi blanditiis iure omnis quas magnam quaerat ratione totam ab non qui, dolores ut tempore consequuntur itaque fuga neque sint inventore molestiae optio? Dicta eos fugiat explicabo.</p>
+      </div>
+    </section>
+    <script>
+      function toggleClass(element, className){
+        element.classList.toggle(className);
+      }
+      async function resizeHeading(element) {
+        let textLength = element.innerText.length;
+
+        let minSymbols = 1;
+        let maxSymbols = 421;
+
+        // if text more than 420 symbols add ellipsis
+        if(textLength > maxSymbols){
+          element.innerText = element.innerText.slice(0, 420) + '...';
+          textLength = 420;
+        }
+        // get font size of element
+        let fontSize = window.getComputedStyle(element).fontSize;
+        // remove 'px' from string
+        fontSize = parseInt(fontSize.slice(0, -2));
+        
+        // set up max symbols
+        let median = (maxSymbols - minSymbols) / 2;
+        median = Math.floor(median); // 420 / 2 = 210
+
+        let maxFontSize = parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--size3').slice(0, -2));
+        let minFontSize = parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--size1').slice(0, -2));
+        let fontMedian = (maxFontSize - minFontSize) / 2; // 42 / 2 = 21
+
+        // define fontSize
+        let refontedSize = (median - textLength) * fontMedian / median + fontMedian + minFontSize;
+        refontedSize = Math.floor(refontedSize);
+
+        if(textLength > 99 && textLength < 249){
+          return;
+        } else {
+          fontSize = refontedSize;
+        }
+
+        console.log(fontSize);
+      
+        // Apply the calculated font size to the element
+        element.style.fontSize = `${fontSize}px`;
+      }
+      // Element ID is EI0
+      resizeHeading(document.getElementById('EI0'));
+    </script>
+    <!-- Filters -->
+    <style>
+      form{
+        padding: var(--size01);
+      }
+      form > h2{
+        font-size: var(--size20);
+        padding-bottom: var(--size01);
+      }
+      form > div{
+        margin-bottom: var(--size02);
+      }
+      form > div > label{
+        display: block;
+        padding-bottom: var(--size01);
+      }
+      form.filters input{
+        padding: var(--size0) var(--size01);
+        background: #ffffff;
+      }
+      form.filters .search > .recommendation{
+        display: flex;
+        gap: var(--size0);
+        flex-wrap: wrap;
+      }
+      form.filters .search > .recommendation > button{
+        height: 34px;
+        background: #ffffff;
+        vertical-align: middle;
+        padding: 0 var(--size02);
+      }
+      form.filters .search > .min.recommendation > button:last-of-type{
+        background: unset;
+      }
+      form.filters .search.query{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--size0);
+      }
+      form.filters .search.query > input[type="text"]{
+        width: 100%;
+      }
+      form.filters .search.queries{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--size0);
+      }
+      form.filters .search.queries > div{
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        padding: 0 var(--size02);
+        gap: var(--size0);
+        height: 44px;
+      }
+      form.filters .search.queries > div > input[type="checkbox"] + label{
+        font-size: var(--size1);
+      }
+      form.filters .search.queries > div > input[type="checkbox"]{
+        height: var(--size02);
+        width: var(--size02);
+      }
+      form.filters div.optional{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--size01);
+      }
+      form.filters .rating div.visual > button > img{
+        width: var(--size2);
+        height: var(--size2);
+        opacity: 0.5;
+      } 
+      form.filters .rating div.visual > button.active > img{
+        opacity: 1;
+      }
+      form.filters .type > div > div{
+        display: inline-flex;
+        align-items: center;
+        gap: var(--size0);
+        height: 44px;
+        background: #ffffff;
+        padding: 0 var(--size02);
+      }
+      form.filters .type > div > div > input[type="radio"]{
+        height: var(--size02);
+        width: var(--size02);
+      }
+      form.filters .type > div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--size0);
+      }
+      form.filters > button{
+        background: #ffffff;
+        height: 44px;
+        padding: 0 var(--size02) 0 var(--size0);
+        display: flex;
+        align-items: center;
+      }
+      form.filters > button > img{
+        width: var(--size2);
+        height: var(--size2);
+      }
+    </style>
+    <form action="/.there/script/tool/filter" method="post" class="filters">
+      <h2>Фильтры</h2>
+      <div class="search query">
+        <label for="FI0">Введите поисковый запрос</label>
+        <input type="text" name="search" id="FI0" placeholder="" maxlength="50">
+        <input type="submit" value="Найти">
+        <div class="min recommendation">
+          <button>Фильтр 0</button>
+          <button>Фильтр 1</button>
+          <button>Фильтр 2</button>
+          <button>Фильтр 3</button>
+          <button>Фильтр 4</button>
+          <button>Фильтр 5</button>
+          <button>Фильтр 6</button>
+          <button>Показать всё</button>
+        </div>
+      </div>
+      <div class="search queries">
+        <div><input type="checkbox" name="searchQuery" id="FIS0_0" value="Фильтр 0"><label for="FIS0_0">Фильтр 0</label></div>
+        <div><input type="checkbox" name="searchQuery" id="FIS0_1" value="Фильтр 1"><label for="FIS0_1">Фильтр 1</label></div>
+        <div><input type="checkbox" name="searchQuery" id="FIS0_2" value="Фильтр 2"><label for="FIS0_2">Фильтр 2</label></div>
+        <div><input type="checkbox" name="searchQuery" id="FIS0_3" value="Фильтр 3"><label for="FIS0_3">Фильтр 3</label></div>
+        <div><input type="checkbox" name="searchQuery" id="FIS0_4" value="Фильтр 4"><label for="FIS0_4">Фильтр 4</label></div>
+        <div><input type="checkbox" name="searchQuery" id="FIS0_5" value="Фильтр 5"><label for="FIS0_5">Фильтр 5</label></div>
+        <div><input type="checkbox" name="searchQuery" id="FIS0_6" value="Фильтр 6"><label for="FIS0_6">Фильтр 6</label></div>
+        <div><input type="checkbox" name="searchQuery" id="FIS0_7" value="Фильтр 7"><label for="FIS0_7">Фильтр 7</label></div>
+      </div>
+      <div class="price">
+        <label for="FI1">Минимальная цена</label>
+        <div class="optional">
+          <input type="number" name="minPrice" id="FI1" min="0" max="" placeholder="Введите цену">
+          <input type="range" name="minPriceRange" id="FI1_0" min="0" max="">
+        </div>
+        <label for="FI2">Максимальная цена</label>
+        <div class="optional">
+          <input type="number" name="maxPrice" id="FI2" min="0" max="" placeholder="Введите цену">
+          <input type="range" name="maxPriceRange" id="FI2_0" min="0" max="">
+        </div>
+      </div>
+      <div class="rating">
+        <label>Рейтинг</label>
+        <div class="optional">
+          <div class="visual">
+            <button class="active"><img src="/.there/image/rating.svg" alt="Icon of star"></button>
+            <button><img src="/.there/image/rating.svg" alt="Icon of star"></button>
+            <button><img src="/.there/image/rating.svg" alt="Icon of star"></button>
+            <button><img src="/.there/image/rating.svg" alt="Icon of star"></button>
+            <button><img src="/.there/image/rating.svg" alt="Icon of star"></button>
+          </div>
+          <input type="range" name="rating" id="FI3" min="0" max="5" step="1" value="0">
+        </div>
+      </div>
+      <div class="type">
+        <label>Квалификация</label>
+        <div>
+          <div><input type="radio" name="type" id="FI4_0"><label for="FI4_0">Type 0</label></div>
+          <div><input type="radio" name="type" id="FI4_1"><label for="FI4_1">Type 1</label></div>
+          <div><input type="radio" name="type" id="FI4_2"><label for="FI4_2">Type 2</label></div>
+          <div><input type="radio" name="type" id="FI4_3"><label for="FI4_3">Type 3</label></div>
+          <div><input type="radio" name="type" id="FI4_4"><label for="FI4_4">Type 4</label></div>
+        </div>
+      </div>
+      <button type="submit"><img src="/.there/image/settings.svg" alt="Icon of settings"><span>Применить</span></button>
+    </form>
+    <script>
+      // FI0 is Filter Input 0
+      // FIS0 is Filter InputS 0
+    </script>
+    <!-- Product -->
+    <style>  
+      section .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: var(--size0);
+        padding: var(--size02) 0;
+      }
+      section .grid > div{
+        background: #ffffff;
+        padding: 0 0 var(--size01) 0;
+      }
+      section .grid > div > img{
+        /* background: #cccccc; */
+      }
+      section .grid > div h3{
+        font-size: var(--size11);
+        word-break: break-all;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      section .grid > div h3,
+      section .grid > div a{
+        margin: 0 var(--size01);
+      }
+      section .grid > div a{
+        font-size: var(--size10);
+      }
+    </style>
+    <section>
+      <h2 style="padding: 0 var(--size02);">OBJECT_DESCRIPTION_SHORTAGE</h2>
+      <div class="grid">
+        <div>
+          <img src="/.there/image/decorative-image.svg" alt="">
+          <h3>OBJECT_DESCRIPTION_SHORTAGE</h3>
+          <a href="#contact">Подробнее</a>
+        </div>
+        <div>
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>OBJECT_DESCRIPTION_SHORTAGE</h3>
+          <a href="#contact">Подробнее</a>
+        </div>
+        <div>
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>OBJECT_DESCRIPTION_SHORTAGE</h3>
+          <a href="#contact">Подробнее</a>
+        </div>
+        <div>
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>OBJECT_DESCRIPTION_SHORTAGE</h3>
+          <a href="#contact">Подробнее</a>
+        </div>
+        <div>
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>OBJECT_DESCRIPTION_SHORTAGE</h3>
+          <a href="#contact">Подробнее</a>
+        </div>
+        <div>
+          <img src="/.there/image/decorative-image.svg" alt="Image of IMAGE_DESCRIPTION">
+          <h3>OBJECT_DESCRIPTION_SHORTAGE</h3>
+          <a href="#contact">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <!-- Tags -->
+    <style>
+      #tag{
+        padding: var(--size0) var(--size1);
+      }
+      #tag > h2{
+        padding-bottom: var(--size01);
+      }
+      #tag > div{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--size02);
+      }
+      #tag > div > div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--size0);
+      }
+      #tag > div > div > span{
+        background: #ffffff;
+        padding: 0 var(--size02);
+        height: 34px;
+        display: inline-flex;
+        align-items: center;
+      }
+    </style>
+    <section id="tag">
+      <h2>Тэги</h2>
+      <div>
+        <div>
+          <span id="ID">#1234567890</span>
+        </div>
+        <div>
+          <span>Фильтры 1</span>
+          <span>Фильтры 2</span>
+          <span>Фильтры 3</span>
+        </div>
+        <div>
+          <span id="type">Направление</span>
+          <span id="category">Категория</span>
+        </div>
+      </div>
+    </section>
+    <!-- Recommendations -->
+    <style>
+      #recommendation{
+        padding: var(--size0) var(--size1);
+      }
+      #recommendation > h2{
+        padding-bottom: var(--size01);
+      }
+      #recommendation > div{
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+      }
+      #recommendation > div > .object{
+        background: #ffffff;
+        padding: var(--size02);
+        margin-right: var(--size02);
+        min-width: 300px;
+        scroll-snap-align: start;
+      }
+      #recommendation > div > .object img{
+        aspect-ratio: 1/1;
+      }
+      #recommendation > div > .object h3{
+        font-size: var(--size11);
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      #recommendation > div > .object h3,
+      @media screen and (max-width: 600px){
+        #recommendation > div > .object{
+          min-width: 80vw;
+        }
+        
+      }
+    </style>
+    <section id="recommendation">
+      <h2>Рекомендации</h2>
+      <div>
+        <div class="object">
+          <img src="/.there/image/decorative-image.svg" alt="Placeholder Image">
+          <h3>Lorem ipsum dolor sit. - Lorem, ipsum dolor.</h3>
+          <a href="lorem/">Action</a>
+        </div>
+        <div class="object">
+          <img src="/.there/image/decorative-image.svg" alt="Placeholder Image">
+          <h3>Lorem ipsum dolor sit. - Lorem, ipsum dolor.</h3>
+          <a href="lorem/">Action</a>
+        </div>
+        <div class="object">
+          <img src="/.there/image/decorative-image.svg" alt="Placeholder Image">
+          <h3>Lorem ipsum dolor sit. - Lorem, ipsum dolor.</h3>
+          <a href="lorem/">Action</a>
+        </div>
+        <div class="object">
+          <img src="/.there/image/decorative-image.svg" alt="Placeholder Image">
+          <h3>Lorem ipsum dolor sit. - Lorem, ipsum dolor.</h3>
+          <a href="lorem/">Action</a>
+        </div>
+        <div class="object">
+          <img src="/.there/image/decorative-image.svg" alt="Placeholder Image">
+          <h3>Lorem ipsum dolor sit. - Lorem, ipsum dolor.</h3>
+          <a href="lorem/">Action</a>
+        </div>
+      </div>
+    </section>
+    <!-- Contacts -->
+    <style>
+      #contact{
+      }
+      #contact > h2{
+        font-size: var(--size21);
+        margin-left: var(--size02);
+        padding-bottom: var(--size0);
+      }
+      #contact > p{
+        font-size: var(--size10);
+        margin-left: var(--size02);
+        padding-bottom: var(--size1);
+      }
+
+      #contact ol{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--size0);
+      }
+      #contact ol,
+      #contact ol > li{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      #contact ol > li{
+        background: #ffffff;
+        width: max-content;
+        height: 34px;
+        padding: 0 var(--size02) 0 var(--size0);
+      }
+      #contact ol > li,
+      #contact ol > li > a{
+        display: flex;
+        align-items: center;
+      }
+      #contact > ol > li img{
+        height: 27px;
+        margin-right: var(--size0);
+      }
+      #contact > ol > li span{
+        font-size: var(--size10);
+        font-weight: 600;
+      }
+
+      #contact iframe{
+        margin: var(--size02) 0 0 0;
+        width: 100%;
+        height: 400px;
+        border: none;
+        background: #ffffff;
+      }
+      #contact form{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: var(--size0);
+        padding: var(--size02) 0;
+        margin: 0 var(--size02);
+      }
+      #contact form > legend{
+        padding-bottom: var(--size01);
+        font-size: var(--size12);
+        font-weight: 600;
+      }
+      #contact form button,
+      #contact form input,
+      #contact form textarea{
+        background: #ffffff;
+      }
+      #contact form textarea{
+        padding: var(--size01) var(--size02);
+        resize: vertical;
+        min-height: 100px;
+        max-height: 350px;
+        
+      }
+      #contact form input{
+        display: inline-block;
+        padding: 0 var(--size02);
+        min-height: 34px;
+      }
+      #contact form button{
+        padding: 0 var(--size01);
+        height: 34px;
+      }
+    </style>
+    <section id="contact">
+      <h2>Контакты</h2>
+      <p>DESCRIPTION_OF_CONTACT</p>
+      <ol>
+        <li><a href=""><img src="/.there/image/decorative-image.svg" alt="Icon of ICON_DESCRIPTION"><span>CONTACT_DESCRIPTION</span></a></li>
+        <li><a href=""><img src="/.there/image/decorative-image.svg" alt="Icon of ICON_DESCRIPTION"><span>CONTACT_DESCRIPTION</span></a></li>
+        <li><a href=""><img src="/.there/image/decorative-image.svg" alt="Icon of ICON_DESCRIPTION"><span>CONTACT_DESCRIPTION</span></a></li>
+        <li><a href=""><img src="/.there/image/decorative-image.svg" alt="Icon of ICON_DESCRIPTION"><span>CONTACT_DESCRIPTION</span></a></li>
+        <li><img src="/.there/image/decorative-image.svg" alt="Icon of ICON_DESCRIPTION"><span>CONTACT_DESCRIPTION</span></li>
+      </ol>
+      <iframe src="https://rohhs.com/" frameborder="0"></iframe>
+      <form action="/.there/script/tool/sender.php" method="post">
+        <legend style="grid-column: 1 / -1;">Отправить заявку</legend>
+        <input type="text" name="name" placeholder="Имя">
+        <input type="email" name="email" placeholder="Почта">
+        <input type="tel" name="phone" placeholder="Телефон">
+        <textarea name="message" placeholder="Сообщение" style="grid-column: 1 / -1;"></textarea>
+        <button type="submit" style="grid-column: 1 / -1; width: max-content; justify-self: flex-end;">Отправить</button>
+      </form>
+    </section>
+    <!-- News -->
+    <style>
+      #news{
+        padding: var(--size01) var(--size1);
+      }
+      #news > h2{
+        padding: var(--size02);
+      }
+      #news > div{
+        display: grid;
+        gap: var(--size01);
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
+      #news > div > .new{
+        padding: 0 0 var(--size02) 0;
+        background: #ffffff;
+      }
+      #news > div > .new > img{
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
+      #news > div > .new > h3{
+        padding: var(--size0) var(--size02);
+      }
+      #news > div > .new > a{
+        padding: 0 var(--size02);
+      }
+    </style>
+    <section id="news">
+      <h2>Новости</h2>
+      <div>
+        <div class="new">
+          <img src="/.there/image/decorative-image.svg" alt="Photo of IMAGE_DESCRIPTION">
+          <h3>Заголовоок новости от 21.01.2022</h3>
+          <a href="/link">Подробнее ...</a>
+        </div>
+        <div class="new">
+          <img src="/.there/image/decorative-image.svg" alt="Photo of IMAGE_DESCRIPTION">
+          <h3>Заголовоок новости от 21.01.2022</h3>
+          <a href="/link">Подробнее ...</a>
+        </div>
+        <div class="new">
+          <img src="/.there/image/decorative-image.svg" alt="Photo of IMAGE_DESCRIPTION">
+          <h3>Заголовоок новости от 21.01.2022</h3>
+          <a href="/link">Подробнее ...</a>
+        </div>
+        <div class="new">
+          <img src="/.there/image/decorative-image.svg" alt="Photo of IMAGE_DESCRIPTION">
+          <h3>Заголовоок новости от 21.01.2022</h3>
+          <a href="/link">Подробнее ...</a>
+        </div>
+        <div class="new">
+          <img src="/.there/image/decorative-image.svg" alt="Photo of IMAGE_DESCRIPTION">
+          <h3>Заголовоок новости от 21.01.2022</h3>
+          <a href="/link">Подробнее ...</a>
+        </div>
+        <div class="new">
+          <img src="/.there/image/decorative-image.svg" alt="Photo of IMAGE_DESCRIPTION">
+          <h3>Заголовоок новости от 21.01.2022</h3>
+          <a href="/link">Подробнее ...</a>
+        </div>
+      </div>
+    </section>
+    <!-- Source -->
+    <style>
+      #source{
+        padding: var(--size02);
+        background: #ffffff;
+      }
+      #source h2{
+        font-size: var(--size12);
+        font-weight: 500;
+        padding-bottom: 9px;
+      }
+      #source ul{
+        list-style: decimal;
+        line-height: 1.7  ;
+      }
+      #source ul a{
+        color: #3300CC;
+      }
+    </style>
+    <section id="source">
+      <h2>Источники</h2>
+      <ul>
+        <li><a href="">SOURCE_DESCRIPTION</a></li>
+        <li><a href="">SOURCE_DESCRIPTION</a></li>
+        <li><a href="">SOURCE_DESCRIPTION</a></li>
+        <li><a href="">SOURCE_DESCRIPTION</a></li>
+      </ul>
+    </section>
+    <!-- Other -->
+    <style>
+      #other{
+        padding: 0 0 var(--size01) 0;
+        margin: 0 var(--size02);
+      }
+      #other h2{
+        padding: 0 0 var(--size01) 0;
+        font-weight: 600;
+      }
+      #other ol{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--size0);
+      }
+      #other ol,
+      #other ol > li{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: max-content;
+      }
+      #other ol > li{
+        background: #ffffff;
+        height: 34px;
+        padding: 0 var(--size02);
+      }
+      #other ol > li,
+      #other ol > li > a{
+        display: flex;
+        align-items: center;
+      }
+      #other > ol > li img{
+        height: 27px;
+        margin-right: var(--size0);
+      }
+      #other > ol > li span{
+        font-size: var(--size10);
+        font-weight: 600;
+      }
+      @media (max-width: 600px){
+        #contact ol{
+          padding: 0 var(--size01);
+        }
+        #contact ol > li,
+        #other ol,
+        #other ol > li{
+          width: 100%;
+        }
+      }
+    </style>
+    <section id="other">
+      <h2>Прочее</h2>
+      <ol>
+        <li><a href=""><span>CONTACT_DESCRIPTION</span></a></li>
+        <li><a href=""><span>CONTACT_DESCRIPTION</span></a></li>
+        <li><a href=""><span>CONTACT_DESCRIPTION</span></a></li>
+        <li><a href=""><span>CONTACT_DESCRIPTION</span></a></li>
+      </ol>
+    </section>
+  </main>
+  <aside></aside>
+  <footer>
+    <span>
+      domainname.com © 2024 This website corresponds to the object.
+    </span>
+  </footer>
+</body>
+</html>

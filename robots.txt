@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /were
+Disallow: /*.txt
+Crawl-delay: 21
+Sitemap: https://www.example.com/sitemap.xml
+
+# Directives for content update frequency
+User-agent: FrequentUpdateBot
+Crawl-delay: 1
+

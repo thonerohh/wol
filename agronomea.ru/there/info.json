@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Агрономиа",
+  "legalName": "Организация Агрономиа",
+  "url": "https://agronomea.ru",
+  "logo": "https://agronomea.ru/there/icon/logo.svg",
+  "description": "Организация в сфере обслуживания сельскохозяйственной техники и оборудования.",
+  "category": "Agronomy",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Moscow",
+    "addressCountry": "Russia",
+    "streetAddress": "Малый проспект 47"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+79258178613",
+      "contactType": "customer service"
+    }
+  ],
+  "sameAs": [
+    "https://rohhs.com/",
+    "https://rohh.ru/",
+    "https://en.wikipedia.org/wiki/Agronomy",
+    "https://ru.wikipedia.org/wiki/Агрономия"
+  ]
+}
